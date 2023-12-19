@@ -18,28 +18,28 @@ backend/ - Django project
 database/ - PostgreSQL project
 docker/ - Dockerfiles
 docs/ - Documentation
-- business/ - Business documentation
--- bpmn/ - Business Process Model and Notation
--- vision/ - Vision Statement
-- database/ - Database documentation
--- conceptual/ - Conceptual Database Design
--- logical/ - Logical Database Design
--- physical/ - Physical Database Design
-- design/ - Design documentation
-- diagrams/ -
--- activity/ -
--- classes/ -
--- sequence/ -
--- state/ -
--- use-cases/ -
-- requirements/ - Requirements documentation
--- detailed/ - Detailed Requirements
--- solution/ - Solution Proposal
-- testing/ - Testing documentation
--- cases/ -
--- plans/ -
-- user-stories/ -
-- viability/ -
-- README.md - Initial Description
+    - business/ - Business documentation
+        - bpmn/ - Business Process Model and Notation
+        - vision/ - Vision Statement
+    - database/ - Database documentation
+        - conceptual/ - Conceptual Database Design
+        - logical/ - Logical Database Design
+        - physical/ - Physical Database Design
+    - design/ - Design documentation
+    - diagrams/ -
+        - activity/ -
+        - classes/ -
+        - sequence/ -
+        - state/ -
+        - use-cases/ -
+    - requirements/ - Requirements documentation
+        - detailed/ - Detailed Requirements
+        - solution/ - Solution Proposal
+    - testing/ - Testing documentation
+        - cases/ -
+        - plans/ -
+    - user-stories/ -
+    - viability/ -
+    - README.md - Initial Description
 frontend/ - React project
 ```
