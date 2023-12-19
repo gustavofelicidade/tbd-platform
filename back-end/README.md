@@ -25,4 +25,4 @@ Create project: django-admin startproject project_name
 
 Create app:     python manage.py startapp app_name
 
-Run Server:     django-admin startproject mysite 
+Run Server:     python manage.py runserver     
