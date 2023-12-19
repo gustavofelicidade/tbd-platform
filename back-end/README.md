@@ -22,5 +22,7 @@ Forum is the second app.
 ### Commands to control the Hazer Risk Forum web application:
 
 Create project: django-admin startproject project_name
+
 Create app:     python manage.py startapp app_name
+
 Run Server:     django-admin startproject mysite 
