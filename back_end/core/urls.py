@@ -1,5 +1,5 @@
 """
-URL configuration for risk_forum project.
+URL configuration for core project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -18,9 +18,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
+from . import views
 
 urlpatterns = [
-    path("forum/", include("forum.urls")),
+    # Landing Page
+    path('', views.landing_page),
+
+    # Go to Forum APP
+    path("forum/", include("forum.urls")),  # Routing that is connected with the account module
+
+    # Go to Admin APP
     path('admin/', admin.site.urls),
-    path('templates/', TemplateView.as_view(template_name='base.html'))
+
+    # Go to Account APP
+    path('account/', include('account.urls')),  # Routing that is connected with the account module
 ]
+
+
