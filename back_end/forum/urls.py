@@ -4,8 +4,8 @@ from django.views.generic import TemplateView
 from . import views
 
 urlpatterns = [
-    path("", views.index, name="index"),
-    path('homepage.html', views.homepage),
+    # path("", views.index, name="index"),
+    path('', views.homepage),
     path('dashboard.html', views.dashboard),
     path('base.html', views.base),
     path('admin-panel-page.html', views.admin_panel),
