@@ -32,3 +32,5 @@ urlpatterns = [
     # Go to Account APP
     path('account/', include('account.urls')),  # Routing that is connected with the account module
 ]
+
+
