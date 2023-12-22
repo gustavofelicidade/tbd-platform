@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Init forums
+    # After create a new APP, go to urls.py to add the path
     'forum',
+    'account'
 ]
 
 MIDDLEWARE = [
