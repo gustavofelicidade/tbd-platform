@@ -15,7 +15,7 @@ from django.http import HttpResponse
 
 from . import views
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return HttpResponse("Hello, world. You're at the Forum index.")
 
 
 class ThreadListView(ListView):
