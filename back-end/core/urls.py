@@ -20,7 +20,15 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    path("forum/", include("forum.urls")),
+    # Landing Page
+    path('', TemplateView.as_view(template_name='index.html'), name='landing-page'),
+
+    # Go to Forum APP
+    path("forum/", include("forum.urls")),  # Routing that is connected with the account module
+
+    # Go to Admin APP
     path('admin/', admin.site.urls),
-    path('templates/', TemplateView.as_view(template_name='base.html'))
+
+    # Go to Account APP
+    path('account/', include('account.urls')),  # Routing that is connected with the account module
 ]
