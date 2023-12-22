@@ -4,7 +4,11 @@
 Docker-compose is used to run the back-end. To run the back-end, run the following command in the root directory of the project:
 
 ```bash
-docker-compose up
+docker-compose up -d --build
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py createsuperuser
+docker exec -it back_end-web-1 bash
+python manage.py runserver
 ```
 
 ### Requirements
