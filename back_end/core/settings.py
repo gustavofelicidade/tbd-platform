@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # After create a new APP, go to urls.py to add the path
     'forum',
-    'account'
+    'account',
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -132,10 +133,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     # 'core/static',
-    os.path.join(BASE_DIR, r'core\static'),
-    (  "css" , 'core\static'),
-    (  "fonts" , 'core\static'),
-    (  "images" , 'core\static'),
-    (  "js" , 'core\static')
+    os.path.join(BASE_DIR, r'core/static'),
+    (  "css" , 'core/static'),
+    (  "fonts" , 'core/static'),
+    (  "images" , 'core/static'),
+    (  "js" , 'core/static')
 
 ]
