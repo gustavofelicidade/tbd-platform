@@ -1,0 +1,17 @@
+version: "3.8"  # Specify the Docker Compose version
+
+services:
+    risk_forum_db:
+        image: postgres
+        restart: always  # Ensure the container restarts if it fails
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: your_username
+            POSTGRES_PASSWORD: your_password
+            POSTGRES_DB: risk_forum
+        volumes:
+            - risk_forum_data:/var/lib/postgresql/data  # Optional volume for data persistence
+
+volumes:
+    risk_forum_data:  # Optional volume definition
