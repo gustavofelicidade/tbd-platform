@@ -1,7 +1,7 @@
 # carregando as funções em outros arquivos .py
 from Database import database as db
 import hashlib
-
+import psycopg2
 
 def make_hashes(password):
     return hashlib.sha256(str.encode(password)).hexdigest()
@@ -14,6 +14,27 @@ def check_hashes(password,hashed_text):
 
     return False
 
+
+# Database connection details
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "risk_forum",
+        "USER": "postgres",
+        "PASSWORD": "123",
+        "HOST": "db",  # set in docker-compose.yml
+        "PORT": 5432,  # default postgres port
+    }
+}
+
+# Connect to the database
+conn = psycopg2.connect(
+    dbname=DATABASES["default"]["NAME"],
+    user=DATABASES["default"]["USER"],
+    password=DATABASES["default"]["PASSWORD"],
+    host=DATABASES["default"]["HOST"],
+    port=DATABASES["default"]["PORT"]
+)
 
 conn = db.init_connection()
 cur = conn.cursor()
@@ -95,6 +116,3 @@ def view_all_users():
     cur.execute('SELECT * FROM risk_forum.users')
     data = cur.fetchall()
     return data
-
-
-
