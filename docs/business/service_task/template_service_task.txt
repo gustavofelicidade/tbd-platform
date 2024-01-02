@@ -1,0 +1,2 @@
+Specification of a task that uses some type of service, which can be a Web Service or an automated application.
+
