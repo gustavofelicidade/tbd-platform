@@ -1,0 +1,2 @@
+New operational system increment or release for delivery to the client.
+A complete system increment is produced at the end of each Sprint and operationalizes a certain set of system requirements.
