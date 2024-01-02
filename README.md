@@ -25,6 +25,26 @@ risk-forum
 │       └───templates
 ├───database
 └───docs
+    ├───business
+    │   ├───bpmn
+    │   ├───domain_model
+    │   ├───email
+    │   ├───report
+    │   ├───rules
+    │   ├───service_task
+    │   └───vision
+    ├───diagrams
+    │   ├───classes
+    │   ├───database
+    │   ├───sequence
+    │   ├───states
+    │   └───use_cases
+    ├───releases
+    ├───requirements
+    │   └───detailed
+    ├───screen_prototypes
+    ├───sprint
+    └───testing
 ```
 
 ## Prerequisites
