@@ -30,6 +30,9 @@ urlpatterns = [
     # Go to Admin APP
     path('admin/', admin.site.urls),
 
+    # Go to Blog APP
+    path('blog/', include('blog.urls')),  # Routing that is connected with the account module
+
     # Go to Account APP
     path('account/', include('account.urls')),  # Routing that is connected with the account module
 ]

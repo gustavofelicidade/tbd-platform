@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # After create a new APP, go to urls.py to add the path
     'forum',
-    'account'
+    'account',
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -81,9 +82,13 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "risk_forum",
+        "USER": "postgres",
+        "PASSWORD": "123",
+        "HOST": "db",  # set in docker-compose.yml
+        "PORT": 5432,  # default postgres port
     }
 }
 
@@ -132,10 +137,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     # 'core/static',
-    os.path.join(BASE_DIR, r'core\static'),
-    (  "css" , 'core\static'),
-    (  "fonts" , 'core\static'),
-    (  "images" , 'core\static'),
-    (  "js" , 'core\static')
+    os.path.join(BASE_DIR, r'core/static'),
+    (  "css" , 'core/static'),
+    (  "fonts" , 'core/static'),
+    (  "images" , 'core/static'),
+    (  "js" , 'core/static')
 
 ]
