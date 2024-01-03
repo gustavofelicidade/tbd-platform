@@ -1,1 +1,0 @@
-Esta pasta consiste nos artefatos de engenharia de requisitos e a documentacao do projeto. Incluindo design, diagramas, requisitos, etc.
