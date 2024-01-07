@@ -16,7 +16,7 @@ services:
     restart: always
     volumes:
       - risk_forum:/var/lib/postgresql/data
-      - ../database/:/code
+      - ../Database/:/code
     environment:
       POSTGRES_DB:       ${POSTGRES_DB}
       POSTGRES_USER:     ${POSTGRES_USR}

@@ -27,7 +27,7 @@ DATABASES = {
     }
 }
 
-# Connect to the database
+# Connect to the Database
 conn = psycopg2.connect(
     dbname=DATABASES["default"]["NAME"],
     user=DATABASES["default"]["USER"],
