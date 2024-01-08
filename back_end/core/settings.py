@@ -19,14 +19,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+
+# Move to .env File
+# SECRET_KEY = os.environ['SECRET_KEY']
 SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&'
 
+
+# SECURITY WARNING: keep the secret key used in production secret!
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['hermandai.up.railway.app', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app']
 
 # Application definition
 
@@ -40,7 +45,8 @@ INSTALLED_APPS = [
 
     # After create a new APP, go to urls.py to add the path
     'forum',
-    'account'
+    'account',
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -81,11 +88,21 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "mydatabase",
     }
 }
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "risk_forum",
+#         "USER": "postgres",
+#         "PASSWORD": "123",
+#         "HOST": "db",  # set in docker-compose.yml
+#         "PORT": 5432,  # default postgres port
+#     }
+# }
 
 
 # Password validation
@@ -123,7 +140,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/core/static/'
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
@@ -132,10 +149,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     # 'core/static',
-    os.path.join(BASE_DIR, r'core\static'),
-    (  "css" , 'core\static'),
-    (  "fonts" , 'core\static'),
-    (  "images" , 'core\static'),
-    (  "js" , 'core\static')
+    os.path.join(BASE_DIR, r'core/static'),
+    (  "css" , 'core/static'),
+    (  "fonts" , 'core/static'),
+    (  "images" , 'core/static'),
+    (  "js" , 'core/static')
 
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
