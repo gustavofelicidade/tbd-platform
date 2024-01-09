@@ -6,7 +6,9 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /code
 
-COPY . /code/
+COPY requirements.txt /code
+
+COPY . /code
 
 RUN apt-get update \
     && apt-get install -y gcc \
