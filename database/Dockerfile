@@ -6,7 +6,7 @@ ENV POSTGRES_USER=postgres
 
 WORKDIR /database
 
-COPY . /database/
+COPY . /database
 
 RUN psql -U postgres -d risk_forum -f dump.sql
 
