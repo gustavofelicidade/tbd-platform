@@ -8,7 +8,6 @@ WORKDIR /database
 
 COPY . /database
 
-RUN psql -U postgres -d risk_forum -f dump.sql
-
 EXPOSE 5432
 
+CMD ["psql", "-U", "postgres", "-d", "risk_forum", "-f", "dump.sql"]
