@@ -1,4 +1,4 @@
-FROM postgres:16
+FROM postgres:16.1-bullseye
 
 ENV POSTGRES_PASSWORD=123
 ENV POSTGRES_DB=risk_forum
@@ -9,5 +9,3 @@ WORKDIR /database
 COPY . /database
 
 EXPOSE 5432
-
-CMD ["psql", "-U", "postgres", "-d", "risk_forum", "-f", "dump.sql"]
