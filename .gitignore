@@ -4,3 +4,5 @@
 __pycache__
 .idea
 venv
+front_end/app/node_modules
+back_end/core/staticfiles

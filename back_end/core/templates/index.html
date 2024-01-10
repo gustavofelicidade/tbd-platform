@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum</title>
-    <link rel="stylesheet" href="core\static\css\style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -50,7 +51,7 @@
             <div class="subforum-title">
                 <h1>Image Overlay</h1>
             </div>
-            <img  src="core/static/images/Blue_Modern.jpg" alt="Background" style="height:300px;width:1100px;display:block;margin-left: auto;margin-right: auto;">
+            <img  src="{% static 'images/Blue_Modern.jpg' %}" alt="Background" style="height:300px;width:1100px;display:block;margin-left: auto;margin-right: auto;">
             <div class="subforum-row-img    ">
 
             </div>
@@ -170,7 +171,7 @@
     <footer>
         <span>&copy;  Hazor Group | All Rights Reserved</span>
     </footer>
-    <script src="core\static\css\js\main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
 </body>
 </html>
