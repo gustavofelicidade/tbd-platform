@@ -18,9 +18,9 @@ services:
       - risk_forum:/var/lib/postgresql/data
       - ../Database/:/code
     environment:
-      POSTGRES_DB:       ${POSTGRES_DB}
-      POSTGRES_USER:     ${POSTGRES_USR}
-      POSTGRES_PASSWORD: ${POSTGRES_PWD}
+      POSTGRES_DB:       "risk_forum"
+      POSTGRES_USER:     "postgres"
+      POSTGRES_PASSWORD: "123"
     ports:
       - 5432:5432
 
