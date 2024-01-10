@@ -1,21 +1,16 @@
 import psycopg2
+import os
+import dj_database_url
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'risk_forum',
     }
 }
+"""
 
-"""
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "risk_forum",
-        "USER": "postgres",
-        "PASSWORD": "123",
-        "HOST": "db",  # set in docker-compose.yml
-        "PORT": 5432,  # default postgres port
-    }
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
-"""
