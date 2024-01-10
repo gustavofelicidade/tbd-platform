@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['hermandai.up.railway.app', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app']
+ALLOWED_HOSTS = ['hermandai.up.railway.app', '127.0.0.1', 'tbd-platform-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app', 'https://tbd-platform-production.up.railway.app']
 
 # Application definition
 
