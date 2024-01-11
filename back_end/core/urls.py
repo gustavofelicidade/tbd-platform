@@ -35,6 +35,6 @@ urlpatterns = [
 
     # Go to Account APP
     path('account/', include('account.urls')),  # Routing that is connected with the account module
+
+    path('register/', views.register, name='register'),  # Routing that is connected with the account module
 ]
-
-

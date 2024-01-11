@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register to Risk Forum</title>
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body>
+    <div class="registration-form">
+        <h1>Register to Sign up</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="user-type">User Type:</label>
+            <select id="user-type" name="user-type" required>
+                <option value="business">Business</option>
+                <option value="professional">Professional</option>
+            </select><br><br>
+
+            <div id="business-fields" style="display: none;">
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name"><br><br>
+
+                <label for="business-address">Business Address:</label>
+                <input type="text" id="business-address" name="business-address"><br><br>
+
+                <label for="ceo-name">CEO/Owner's Full Name:</label>
+                <input type="text" id="ceo-name" name="ceo-name"><br><br>
+
+                <input type="checkbox" id="confirm-business" name="confirm-business">
+                <label for="confirm-business">I confirm sign up on behalf of the business</label><br><br>
+            </div>
+
+            <div id="professional-fields" style="display: none;">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job-title"><br><br>
+
+                <label for="current-company">Current Company:</label>
+                <input type="text" id="current-company" name="current-company"><br><br>
+
+                <label for="referral">Referral:</label>
+                <input type="text" id="referral" name="referral"><br><br>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="terms-policies">
+        <input type="checkbox" id="accept-terms" name="accept-terms" required>
+        <label for="accept-terms">I accept all terms and policies</label>
+    </div>
+
+    <script>
+        // Add your custom JavaScript here
+        const userTypeSelect = document.getElementById('user-type');
+        const businessFields = document.getElementById('business-fields');
+        const professionalFields = document.getElementById('professional-fields');
+
+        userTypeSelect.addEventListener('change', function () {
+            if (userTypeSelect.value === 'business') {
+                businessFields.style.display = 'block';
+                professionalFields.style.display = 'none';
+            } else if (userTypeSelect.value === 'professional') {
+                businessFields.style.display = 'none';
+                professionalFields.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>

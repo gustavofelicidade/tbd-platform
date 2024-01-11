@@ -46,4 +46,5 @@ def invitation(request):
 def to_page(request):
     return render(request, 'to-page.html')
 
-
+def register(request):
+    return render(request, 'register.html')
