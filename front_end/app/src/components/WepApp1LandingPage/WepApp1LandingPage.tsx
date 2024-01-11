@@ -40,14 +40,22 @@ import { Rectangle145Icon } from './Rectangle145Icon.js';
 import { Rectangle146Icon } from './Rectangle146Icon.js';
 import { Rectangle188Icon } from './Rectangle188Icon.js';
 import classes from './WepApp1LandingPage.module.css';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   className?: string;
 }
+
 /* @figmaId 121:31 */
 export const WepApp1LandingPage: FC<Props> = memo(function WepApp1LandingPage(props = {}) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/Register');
+  };
   return (
-    <div className={`${resets.storybrainResets} ${classes.root}`}>
+    <div className={`${resets.storybrainResets} ${classes.root}`} >
       <div className={classes.rectangle187}></div>
       <div className={classes.rectangle186}></div>
       <div className={classes.rectangle185}></div>
@@ -68,7 +76,11 @@ export const WepApp1LandingPage: FC<Props> = memo(function WepApp1LandingPage(pr
       <div className={classes.rectangle124}>
         <Rectangle124Icon className={classes.icon3} />
       </div>
-      <div className={classes.registerToSignUp}>Register to Sign up</div>
+      <div className={classes.registerToSignUp}>
+        <Button variant="primary" onClick={handleClick}>
+          Register to Sign Up
+        </Button>
+      </div>
       <div className={classes.line23}></div>
       <div className={classes.image10}></div>
       <div className={classes.frame26}>
@@ -381,6 +393,6 @@ export const WepApp1LandingPage: FC<Props> = memo(function WepApp1LandingPage(pr
       </div>
       <div className={classes.readMore4}>read more</div>
       <div className={classes.line31}></div>
-    </div>
+    </div >
   );
 });
