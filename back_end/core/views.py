@@ -45,6 +45,9 @@ def invitation(request):
 def email_verification(request):
     return render(request, 'verification.html')
 
+def insert_code(request):
+    return render(request, 'insert_code.html')
+
 
 def to_page(request):
     return render(request, 'to-page.html')
