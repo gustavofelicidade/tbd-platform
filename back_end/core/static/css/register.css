@@ -46,3 +46,35 @@
 }
 
 
+.sign-up-informations .by-creating-an {
+    position: absolute;
+    top: 1602px;
+    left: 229px;
+    width: 824px;
+    font-family: "Inter-Regular", Helvetica;
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+
+
+}
+
+.sign-up-informations .text-wrapper {
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 0;
+
+}
+
+
+.sign-up-informations .div {
+    position: absolute;
+    width: 1256px;
+    height: 1580px;
+    top: 0;
+    left: 0;
+
+}
