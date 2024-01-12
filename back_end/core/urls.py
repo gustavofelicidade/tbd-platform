@@ -24,6 +24,11 @@ urlpatterns = [
     # Landing Page
     path('', views.landing_page),
 
+    # Validating Account
+    path('register', views.invitation),
+    path('verification', views.email_verification),
+    path('insert_code', views.insert_code),
+
     # Go to Forum APP
     path("forum/", include("forum.urls")),  # Routing that is connected with the account module
 

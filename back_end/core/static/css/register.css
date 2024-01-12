@@ -1,0 +1,48 @@
+.sign-up-informations {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.sign-up-informations .overlap-wrapper {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    width: 843px;
+    height: 2389px;
+
+}
+
+.sign-up-informations .overlap {
+    position: relative;
+    overflow: hidden;
+    width: 1346;
+    height: 2389px;
+
+}
+
+.sign-up-informations .image {
+    position: absolute;
+    overflow: hidden;
+    width: 843;
+    height: 2389px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+
+}
+
+.sign-up-informations .rectangle {
+    position: absolute;
+    overflow: hidden;
+    width: 681;
+    height: 1828px;
+    top: 451px;
+    left: 83;
+
+}
+
+
