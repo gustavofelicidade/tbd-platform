@@ -60,9 +60,9 @@
     padding: 1em;
     position: absolute;
     width: 600px;
-    height: 598px;
-    top: 220px;
-    left: 75px;
+    height: 700px;
+    top: 450px;
+    left: 130px;
 
 }
 
@@ -76,12 +76,12 @@
 }
 
 
-.getting-the-code .rectangle {
+.getting-the-code .rectangle-1 {
     position: absolute;
     width: 719px;
     height: 598px;
     top: 200px;
-    left: 50px;
+    left: 60px;
 
 
 }
@@ -106,8 +106,8 @@ label {
 .getting-the-code  .text-wrapper {
     position: absolute;
     width: 533px;
-    top: 183px;
-    left: 94px;
+    top: 250px;
+    left: 150px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
     color: #FFFFFF;
@@ -173,8 +173,8 @@ label {
 .getting-the-code  .text-wrapper-3 {
     position: absolute;
     width: 194px;
-    top: 474px;
-    left: 265px;
+    top: 600px;
+    left: 320px;
     font-family: "Inter", Helvetica;
     font-weight: 800;
     font-size: 25px;
