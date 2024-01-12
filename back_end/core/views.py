@@ -40,7 +40,10 @@ def finance_management_features(request):
 
 
 def invitation(request):
-    return render(request, 'invitation.html')
+    return render(request, 'register.html')
+
+def email_verification(request):
+    return render(request, 'verification.html')
 
 
 def to_page(request):

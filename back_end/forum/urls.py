@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin-panel-page.html', views.admin_panel),
     path('ai-risk-profile.html', views.ai_risk_profile),
     path('finance-management-features.html', views.finance_management_features),
-    path('invitation.html', views.invitation),
+    path('register.html', views.invitation),
     path('to-page.html', views.to_page),
 
 ]
