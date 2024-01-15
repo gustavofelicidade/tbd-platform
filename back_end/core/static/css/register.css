@@ -471,19 +471,33 @@
 
 }
 
-.sign-up-informations .text-wrapper-12 {
+.sign-up-informations .text-wrapper-13 {
     position: absolute;
-    width: 383px;
-    top: 1434px;
-    left: 122px;
-    font-family: "Inter-Bold", Helvetica;
-    font-weight: 700;
-    color: #FFFFFF;
-    font-size: 40px;
+    width: 147px;
+    top: 1738px;
+    left: 554px;
+    font-family: "Inter", Helvetica;
+    font-weight: 800;
+    font-size: 25px;
+    color: #000080;
     text-align: center;
-    letter-spacing: 0;
-    line-height: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #000080;
+    border-radius: 20px;
+    margin: 2px 2px;
+    padding: 16px 16px;
 
+    cursor: pointer;
+
+}
+
+.sign-up-informations .text-wrapper-13:hover {
+  position: absolute;
+  background-color: #000080;
+  color: white;
+  border: 2px solid white;
 
 }
 

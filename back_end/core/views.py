@@ -19,8 +19,8 @@ def base(request):
     return render(request, 'base.html')
 
 
-def homepage(request):
-    return render(request, 'homepage.html')
+def mainpage(request):
+    return render(request, 'mainpage.html')
 
 
 def dashboard(request):
