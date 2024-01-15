@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/globals.css' %}">
-<!--    <link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+
   </head>
   <body>
 
@@ -30,24 +30,34 @@
                   <div class="overlap-group-2">
                     <div class="frame">
                     <div class="rectangle-2"></div>
-                    <div class="rectangle-3"></div>
-                    <div class="text-wrapper-2">Business</div>
+
+
+
+                       <!--   Surname Field    -->
+
+                        <div class="surname">
+                            <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+
+                        </div>
+
+
+
+                        <div class="text-wrapper-2">Business</div>
                     <div class="text-wrapper-4">Professional</div>
                   </div>
                   <div class="rectangle-4"></div>
-                </div>
-                <div class="rectangle-5"></div>
-              </div>
+
 
                   <img class="line" src="/static/img/register/line-6.png"/>
                   <div class="text-wrapper-5">Personal data</div>
                 </div>
 
+                                           <!--   Surname Field    -->
+
               <div class="text-wrapper-6">Name</div>
 
-
+               <!--                                  -->
               <div class="novidades">
-<!--                  <input type="email" class="verify" type="name" id="name" pattern=".+@example\.com" size="30" required>-->
                       <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />
 
               </div>
@@ -71,7 +81,7 @@
             <div class="rectangle-9"></div>
           </div>
           <img class="img" src="/static/img/register/rectangle-123.png"/>
-<!--          <div class="text-wrapper-13">Done</div>-->
+
 
             <button class="text-wrapper-13" onclick="location.href = '/mainpage'" >Done</button>
 

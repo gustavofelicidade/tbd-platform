@@ -248,12 +248,47 @@
 
 }
 
+.sign-up-informations .surname{
+    background-color: transparent;
+    font-family: 'poppins';
+    padding: 1em;
+    position: absolute;
+    width: 450px;
+    height: 700px;
+    top: 70px;
+    left: 530px;
+
+}
+
+
+.sign-up-informations .novidades{
+    background-color: transparent;
+    font-family: 'poppins';
+    padding: 1em;
+    position: absolute;
+    width: 450px;
+    height: 700px;
+    top: 230px;
+    left: 130px;
+
+}
+
+.sign-up-informations .verify{
+    border-radius: 24px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid black;
+    color: black;
+    top: 200px;
+}
+
+
 
 .sign-up-informations .text-wrapper-6 {
     position: absolute;
     width: 206px;
-    top: 124px;
-    left: 30px;
+    top: 150px;
+    left: 135px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 700;
     color: #FFFFFF;
@@ -523,7 +558,7 @@
     position: absolute;
     width: 303px;
     height: 290px;
-    top: 76px;
+    top: -6px;
     left: 81px;
     object-fit: cover;
 
