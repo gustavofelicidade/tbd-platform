@@ -9,49 +9,47 @@
 
 .sign-up-informations .overlap-wrapper {
     background-color: #FFFFFF;
-    overflow: hidden;
-    width: 843px;
-    height: 2389px;
+    width: 1439px;
+    height: 2410px;
 
 }
 
 .sign-up-informations .overlap {
     position: relative;
-    overflow: hidden;
-    width: 1346;
-    height: 2389px;
+    height: 2410px;
+    background-image: url(../img/register/image-21.png);
+    background-size: cover;
+    background-position: 50% 50%
 
 }
 
-.sign-up-informations .image {
+.sign-up-informations .overlap-group {
     position: absolute;
-    overflow: hidden;
-    width: 843;
-    height: 2389px;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-
+    height: 1256px;
+    height: 1852px;
+    top: 447px;
+    left: 90px;
 
 }
+
 
 .sign-up-informations .rectangle {
     position: absolute;
-    overflow: hidden;
-    width: 681;
-    height: 1828px;
-    top: 451px;
-    left: 83;
+    width: 1162;
+    height: 1844px;
+    top: 8px;
+    left: 52px;
 
 }
 
 
 .sign-up-informations .by-creating-an {
     position: absolute;
+    width: 824px;
     top: 1602px;
     left: 229px;
-    width: 824px;
     font-family: "Inter-Regular", Helvetica;
+    font-weight:400
     color: #FFFFFF;
     font-size: 25px;
     letter-spacing: 0;
@@ -76,5 +74,454 @@
     height: 1580px;
     top: 0;
     left: 0;
+
+}
+
+
+
+.sign-up-informations .overlap-2 {
+    position: absolute;
+    width: 1167px;
+    height: 260px;
+    top: 52px;
+    left: 58px;
+
+}
+
+
+.sign-up-informations .group {
+    position: absolute;
+    width: 1167px;
+    height: 260px;
+    top: 0px;
+    left: 0px;
+
+}
+
+.sign-up-informations .overlap-group-2 {
+    position: absolute;
+    width: 414px;
+    height: 102px;
+    top: 158px;
+    left: 51px;
+
+}
+
+
+.sign-up-informations .frame {
+    position: absolute;
+    width: 209px;
+    height: 66px;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+.sign-up-informations .rectangle-2 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 204px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+.sign-up-informations .rectangle-3 {
+    position: absolute;
+    width: 420px;
+    height: 71px;
+    top: 31px;
+    left: 524px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+.sign-up-informations .text-wrapper-3 {
+    position: absolute;
+    width: 289px;
+    top: 369px;
+    left: 655px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 45px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+
+
+}
+
+.sign-up-informations .text-wrapper-4 {
+    position: absolute;
+    width: 336px;
+    top: 479px;
+    left: 15px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+
+
+}
+
+
+.sign-up-informations .rectangle-4 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 555px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .rectangle-4 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 555px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .rectangle-5 {
+    position: absolute;
+    width: 390px;
+    height: 71px;
+    top: 31px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .rectangle-4 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 555px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+.sign-up-informations .text-wrapper-5 {
+    position: absolute;
+    width: 369px;
+    top: 0px;
+    left: 43px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+
+
+
+}
+
+
+.sign-up-informations .text-wrapper-6 {
+    position: absolute;
+    width: 206px;
+    top: 124px;
+    left: 30px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+
+.sign-up-informations .text-wrapper-7 {
+    position: absolute;
+    width: 206px;
+    top: 124px;
+    left: 564px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+.sign-up-informations .ellipse {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 566px;
+    left: 633px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-radius: 34px;
+    border-color: #9E8383;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .text-wrapper-8 {
+    position: absolute;
+    width: 171px;
+    top: 342px;
+    left: 109px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+
+}
+
+
+.sign-up-informations .ellipse-2 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 566px;
+    left: 144px;
+    background-color: #DADADA;
+    border: 3px solid;
+    border-radius: 34px;
+    border-color: #9E8383;
+
+
+}
+
+
+.sign-up-informations .text-wrapper-9 {
+    width: 171px;
+    position: absolute;
+    top: 342px;
+    left: 109px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+
+
+}
+
+.sign-up-informations .img {
+    position: absolute;
+    width: 928px;
+    top: 947px;
+    height: 79px;
+    left: 129px;
+
+
+}
+
+
+.sign-up-informations .rectangle-6 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 1139px;
+    left: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .text-wrapper-10 {
+    width: 362px;
+    position: absolute;
+    top: 1071px;
+    left: 104px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: center;
+    white-space: nowrap;
+
+
+}
+
+
+.sign-up-informations .text-wrapper-11 {
+    position: absolute;
+    width: 194px;
+    top: 1253px;
+    left: 133px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: center;
+    white-space: nowrap;
+
+
+}
+
+
+.sign-up-informations .rectangle-wrapper {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 1320px;
+    left: 133px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .rectangle-7 {
+    position: relative;
+    width: 920px;
+    height: 71px;
+    top: -1px;
+    left: -1px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .text-wrapper-12 {
+    position: absolute;
+    width: 383px;
+    top: 1434px;
+    left: 122px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: center;
+
+
+}
+
+.sign-up-informations .rectangle-8 {
+    position: absolute;
+    width: 920px;
+    height: 71px;
+    top: 1504px;
+    left: 133px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    border-color: #000000;
+    box-shadow: 0px 4px 4px #000000040;
+
+}
+
+
+.sign-up-informations .rectangle-9 {
+    position: absolute;
+    width: 481px;
+    height: 133px;
+    top: 1710px;
+    left: 388px;
+
+
+}
+
+.sign-up-informations .text-wrapper-12 {
+    position: absolute;
+    width: 383px;
+    top: 1434px;
+    left: 122px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: center;
+
+
+}
+
+
+
+
+.sign-up-informations .rectangle-10 {
+    position: absolute;
+    width: 52px;
+    height: 37px;
+    top: 1608px;
+    left: 152px;
+    background-color: #FFFFFF;
+    border: 3px solid;
+    border-color: #DADADA;
+
+
+}
+
+
+
+.sign-up-informations .image {
+    position: absolute;
+    width: 303px;
+    height: 290px;
+    top: 76px;
+    left: 81px;
+    object-fit: cover;
+
+}
+
+
+.sign-up-informations .image-2 {
+    position: absolute;
+    width: 300px;
+    height: 51px;
+    top: 170px;
+    left: 436px;
+    object-fit: cover;
 
 }

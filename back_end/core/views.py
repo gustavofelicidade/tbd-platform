@@ -14,6 +14,7 @@ def landing_page(request):
     return render(request, 'index.html')
 
 
+
 def base(request):
     return render(request, 'base.html')
 
