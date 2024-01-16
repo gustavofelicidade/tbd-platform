@@ -14,12 +14,13 @@ def landing_page(request):
     return render(request, 'index.html')
 
 
+
 def base(request):
     return render(request, 'base.html')
 
 
-def homepage(request):
-    return render(request, 'homepage.html')
+def mainpage(request):
+    return render(request, 'mainpage.html')
 
 
 def dashboard(request):
@@ -40,7 +41,13 @@ def finance_management_features(request):
 
 
 def invitation(request):
-    return render(request, 'invitation.html')
+    return render(request, 'register.html')
+
+def email_verification(request):
+    return render(request, 'verification.html')
+
+def insert_code(request):
+    return render(request, 'insert_code.html')
 
 
 def to_page(request):

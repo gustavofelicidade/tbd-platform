@@ -1,6 +1,14 @@
 import psycopg2
 
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'risk_forum',
+    }
+}
+
+"""
+DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "risk_forum",
@@ -10,3 +18,4 @@ DATABASES = {
         "PORT": 5432,  # default postgres port
     }
 }
+"""

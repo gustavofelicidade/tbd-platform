@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['hermandai.up.railway.app', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app']
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app/']
 
 # Application definition
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',
 
     # After create a new APP, go to urls.py to add the path
     'forum',
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -139,7 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/core/static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -149,12 +151,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     # 'core/static',
-    os.path.join(BASE_DIR, r'core/static'),
-    (  "css" , 'core/static'),
-    (  "fonts" , 'core/static'),
-    (  "images" , 'core/static'),
-    (  "js" , 'core/static')
-
+    os.path.join(BASE_DIR, 'core/static'),
 ]
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
