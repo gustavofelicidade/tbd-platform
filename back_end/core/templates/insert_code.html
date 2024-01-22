@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <link rel="stylesheet" href="{% static 'css/verification.css' %}">
@@ -29,22 +30,29 @@
                                 <img class="rectangle-1" src="/static/img/verification/rectangle-118.png" />
                                 <div class="text-wrapper">Paste your Code here</div>
 
+                                <form action="{% url 'verify_code' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="novidades">
+                                        <input type="text" class="verify" id="code" name="code" required>
+                                    </div>
+                                    <button type="submit" class="text-wrapper-3">Done</button>
+                                </form>
 
-                                <div class="novidades">
-                                    <input type="email" class="verify" type="email" id="email" pattern=".+@example\.com" size="30" required>
-                                </div>
-
-
-
-
-<!--                                <img class="line" src="img/verification/line-6.svg" />-->
-<!--                                <div class="rectangle-2"></div>-->
-
-<!--                                <img class="img" src="img/verification/rectangle-123.svg" />-->
-                                <div class="text-wrapper-5" >Code sent to provided Email</div>
+<!--                                <div class="novidades">-->
+<!--                                    <input type="email" class="verify" type="email" id="email" size="30" required>-->
+<!--                                </div>-->
 
 
-                                <button class="text-wrapper-3" onclick="location.href = '/register'" >Done</button>
+
+
+<!--&lt;!&ndash;                                <img class="line" src="img/verification/line-6.svg" />&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="rectangle-2"></div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                                <img class="img" src="img/verification/rectangle-123.svg" />&ndash;&gt;-->
+<!--                                <div class="text-wrapper-5" >Code sent to provided Email</div>-->
+
+
+<!--                                <button class="text-wrapper-3" onclick="location.href = '/register'" >Done</button>-->
 
 
 
