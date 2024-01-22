@@ -23,8 +23,9 @@ def send_verification_code(request):
         email = request.POST.get('email')
         code = random.randint(100000, 999999)
         verification_codes[email] = code
+        request.session['verification_email'] = email  # Save email in session
         send_mail(
-            'Your Verification Code',
+            'HermandAI: Your Verification Code',
             f'Your code is: {code}',
             'gustavofelicidadedacosta@gmail.com',  # Replace with your email
             [email],
@@ -35,11 +36,12 @@ def send_verification_code(request):
 
 def verify_code(request):
     if request.method == 'POST':
-        email = request.POST.get('email')  # Ensure email is passed from the form
         code = request.POST.get('code')
-        if verification_codes.get(email) == int(code):
-            return redirect('/register')
+        email = request.session.get('verification_email')  # Retrieve email from session
+        if email and verification_codes.get(email) == int(code):
+            return redirect('register')
         else:
+            print('Code not found')
             # Add error message
             return redirect('/insert_code')
     return redirect('/verification')
