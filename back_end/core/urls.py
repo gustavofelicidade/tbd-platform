@@ -25,9 +25,13 @@ urlpatterns = [
     path('', views.landing_page),
 
     # Validating Account
-    path('register', views.invitation),
+    path('register', views.register, name='register'),
     path('verification', views.email_verification),
     path('insert_code', views.insert_code),
+
+    path('send_verification_code', views.send_verification_code, name='send_verification_code'),
+    path('verify_code', views.verify_code, name='verify_code'),
+
     path('mainpage', views.mainpage),
 
     # Go to Forum APP

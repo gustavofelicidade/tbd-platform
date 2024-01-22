@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+
 import os
+from dotenv import load_dotenv
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,10 +30,25 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app/']
+
+# settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# For production, configure a real email backend
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Use environment variable
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Use environment variable
 
 # Application definition
 
@@ -45,6 +62,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
 
     # After create a new APP, go to urls.py to add the path
+    'core',
     'forum',
     'account',
     "blog",
