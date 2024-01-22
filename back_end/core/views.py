@@ -5,10 +5,29 @@
 from django.views.generic import ListView, DetailView, CreateView
 from django.urls import reverse_lazy
 
-
-from django.shortcuts import render
 from django.http import HttpResponse
 
+from django.shortcuts import render, redirect
+from .forms import RegistrationForm
+
+from django.contrib import messages
+
+def register(request):
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Registration successful!')
+            return redirect('/mainpage')  # Redirect after POST
+        else:
+            messages.error(request, 'Registration failed. Please check the entered data.')
+    else:
+        form = RegistrationForm()  # An unbound form
+
+    return render(request, 'register.html', {'form': form})
+
+def invitation(request):
+    return render(request, 'register.html')
 
 def landing_page(request):
     return render(request, 'index.html')
@@ -40,8 +59,7 @@ def finance_management_features(request):
     return render(request, 'finance-management-features.html')
 
 
-def invitation(request):
-    return render(request, 'register.html')
+
 
 def email_verification(request):
     return render(request, 'verification.html')

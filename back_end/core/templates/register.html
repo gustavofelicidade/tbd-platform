@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
 
 
 
@@ -31,54 +31,108 @@
               <div class="overlap-2">
                 <div class="group">
                   <div class="overlap-group-2">
+                      <div class="frame">
+                          <form method="post" action="{% url 'register' %}">
+                              {% csrf_token %}
+
+                              <!-- Name Input Field -->
+                              <div class="novidades">
+                                  <input type="text" class="verify" id="name" name="{{ form.name.name }}" required minlength="4" maxlength="8" size="10" value="{{ form.name.value }}">
+                              </div>
+
+                              <!-- Surname Input Field -->
+                              <div class="surname">
+                                  <input type="text" class="verify" id="surname" name="{{ form.surname.name }}" required minlength="4" maxlength="8" size="10" value="{{ form.surname.value }}">
+                              </div>
+
+                              <!-- Email Input Field -->
+                              <div>
+                                  <input type="email" class="email-box email-field" id="email" name="{{ form.email.name }}" size="30" required value="{{ form.email.value }}">
+                              </div>
+
+                              <!-- Business Input Field -->
+                              <div>
+                                  <input type="text" class="business-name business-field" id="business" name="{{ form.business.name }}" value="{{ form.business.value }}">
+                              </div>
+
+                                <!-- Professional Input Field -->
+                              <div>
+                                  <input type="text" class="select-box-2 select-field-2" id="professional" name="{{ form.professional.name }}" value="{{ form.professional.value }}">
+                              </div>
+
+                              <!-- Business Address Input Field -->
+                              <div>
+                                  <input type="text" class="business-address business-field-address" id="business_address" name="{{ form.business_address.name }}" value="{{ form.business_address.value }}">
+                              </div>
+
+                              <!-- CEO Name Input Field -->
+                              <div>
+                                  <input type="text" class="ceo-name ceo-name-field" id="ceo_name" name="{{ form.ceo_name.name }}" value="{{ form.ceo_name.value }}">
+                              </div>
+
+                              <!-- Password Input Field -->
+                              <div>
+                                  <input type="password" class="password password-field" id="password" name="{{ form.password.name }}" value="{{ form.password.value }}">
+                              </div>
+
+                              <!-- Submit Button -->
+                              <button type="submit" class="text-wrapper-13">Submit</button>
+
+
+                          </form>
+
+
+
+<!--                          &lt;!&ndash;   Form Input Field    &ndash;&gt;-->
+
+
+<!--                          &lt;!&ndash; Name Input Field &ndash;&gt;-->
+<!--                          <div class="novidades">-->
+<!--                              <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />-->
+
+<!--                          </div>-->
+
+
+<!--                          &lt;!&ndash;   Surname Input Field    &ndash;&gt;-->
+<!--                          <div class="surname">-->
+<!--                              <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />-->
+
+<!--                          </div>-->
+
+<!--                          &lt;!&ndash; Email Name Input Field &ndash;&gt;-->
+<!--                          <input type="email" class="email-box email-field"  pattern=".+@example\.com" size="30" required>-->
+
+<!--                          &lt;!&ndash; Business Selector Input Field &ndash;&gt;-->
+
+<!--                          <input type="text" class="select-box select-field">-->
+
+<!--                          &lt;!&ndash; Professional  Selector Input Field &ndash;&gt;-->
+
+<!--                          <input type="text" class="select-box-2 select-field-2">-->
+
+<!--                          &lt;!&ndash; Business Name Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="business-name business-field">-->
+<!--                          &lt;!&ndash;                      <div class="rectangle-4"></div>&ndash;&gt;-->
+
+<!--                          &lt;!&ndash; Business Address Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="business-address business-field-address">-->
+
+<!--                          &lt;!&ndash; Ceo Name Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="ceo-name ceo-name-field">-->
+
+<!--                          &lt;!&ndash;  Password Field &ndash;&gt;-->
+<!--                          <input type="text" class="password password-field">-->
+
+<!--                          &lt;!&ndash;  Password Confirm Field &ndash;&gt;-->
+<!--                          <input type="text" class="password-confirm password-confirm-field">-->
+
+
+<!--                      </div>-->
+
+
+
                   <img class="line" src="/static/img/register/line-6.png"/>
-
-
-
-                    <div class="text-wrapper-5">Personal data</div>
-                    <div class="frame">
-                      <!-- Name Input Field -->
-                      <div class="novidades">
-                        <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-
-                      </div>
-
-
-                      <!--   Surname Input Field    -->
-                      <div class="surname">
-                        <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-
-                      </div>
-
-                      <!-- Email Name Input Field -->
-                      <input type="email" class="email-box email-field"  pattern=".+@example\.com" size="30" required>
-
-                      <!-- Business Selector Input Field -->
-
-                      <input type="text" class="select-box select-field">
-
-                      <!-- Professional  Selector Input Field -->
-
-                      <input type="text" class="select-box-2 select-field-2">
-
-                      <!-- Business Name Input Field -->
-                      <input type="text" class="business-name business-field">
-<!--                      <div class="rectangle-4"></div>-->
-
-                      <!-- Business Address Input Field -->
-                      <input type="text" class="business-address business-field-address">
-
-                       <!-- Ceo Name Input Field -->
-                      <input type="text" class="ceo-name ceo-name-field">
-
-                       <!--  Password Field -->
-                      <input type="text" class="password password-field">
-
-                       <!--  Password Confirm Field -->
-                      <input type="text" class="password-confirm password-confirm-field">
-
-
-                    </div>
+                      <div class="text-wrapper-5">Personal data</div>
                   </div>
 
 
@@ -100,7 +154,6 @@
             <div class="rectangle-9"></div>
           </div>
 
-            <button class="text-wrapper-13" onclick="location.href = '/mainpage'" >Done</button>
 
             <div class="rectangle-10"></div>
         </div>

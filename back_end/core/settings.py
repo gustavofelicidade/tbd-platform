@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
 
     # After create a new APP, go to urls.py to add the path
+    'core',
     'forum',
     'account',
     "blog",

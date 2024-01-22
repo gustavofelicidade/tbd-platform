@@ -25,7 +25,7 @@ urlpatterns = [
     path('', views.landing_page),
 
     # Validating Account
-    path('register', views.invitation),
+    path('register', views.register, name='register'),
     path('verification', views.email_verification),
     path('insert_code', views.insert_code),
     path('mainpage', views.mainpage),
