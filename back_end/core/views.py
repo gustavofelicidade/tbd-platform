@@ -8,9 +8,42 @@ from django.urls import reverse_lazy
 from django.http import HttpResponse
 
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
 from .forms import RegistrationForm
 
 from django.contrib import messages
+
+import random
+
+# Global dictionary to store email and verification codes
+verification_codes = {}
+
+def send_verification_code(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        code = random.randint(100000, 999999)
+        verification_codes[email] = code
+        send_mail(
+            'Your Verification Code',
+            f'Your code is: {code}',
+            'gustavofelicidadedacosta@gmail.com',  # Replace with your email
+            [email],
+            fail_silently=False,
+        )
+        return redirect('/insert_code')
+    return redirect('/verification')
+
+def verify_code(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')  # Ensure email is passed from the form
+        code = request.POST.get('code')
+        if verification_codes.get(email) == int(code):
+            return redirect('/register')
+        else:
+            # Add error message
+            return redirect('/insert_code')
+    return redirect('/verification')
+
 
 def register(request):
     if request.method == 'POST':
