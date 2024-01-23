@@ -61,13 +61,14 @@
   margin: 8px;
 
 }
+*/
 
-.mainpage button{
+.mainpagebutton{
   width: 535px;
   height: 292px;
   border-radius: 20px;
 }
-*/ 
+ 
 
 .items img{
     position: relative;
