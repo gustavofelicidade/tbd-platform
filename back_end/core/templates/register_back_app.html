@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+
+
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+
+  </head>
+
+  <body>
+
+    <div class="sign-up-informations">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="overlap-group">
+          <img class="rectangle" src="/static/img/register/rectangle-118.png"/>
+
+          <p class="by-creating-an">
+            <span class="text-wrapper">By creating an account you agree with our Terms of Service, Privacy Policy and our default Notifications Settings</span>
+
+          </p>
+
+
+          <div class="div">
+            <div class="">
+              <div class="overlap-2">
+                <div class="group">
+                  <div class="overlap-group-2">
+                      <div class="frame">
+                          <form method="post" action="{% url 'register' %}">
+                              {% csrf_token %}
+
+                              <!-- Name Input Field -->
+                              <div class="novidades">
+                                  <input type="text" class="verify" id="name" name="{{ form.name.name }}" required minlength="4" maxlength="8" size="10" value="{{ form.name.value }}">
+                              </div>
+
+                              <!-- Surname Input Field -->
+                              <div class="surname">
+                                  <input type="text" class="verify" id="surname" name="{{ form.surname.name }}" required minlength="4" maxlength="8" size="10" value="{{ form.surname.value }}">
+                              </div>
+
+                              <!-- Email Input Field -->
+                              <div>
+                                  <input type="email" class="email-box email-field" id="email" name="{{ form.email.name }}" size="30" required value="{{ form.email.value }}">
+                              </div>
+
+                              <!-- Business Input Field -->
+                              <div>
+                                  <input type="text" class="business-name business-field" id="business" name="{{ form.business.name }}" value="{{ form.business.value }}">
+                              </div>
+
+                                <!-- Professional Input Field -->
+                              <div>
+                                  <input type="text" class="select-box-2 select-field-2" id="professional" name="{{ form.professional.name }}" value="{{ form.professional.value }}">
+                              </div>
+
+                              <!-- Business Address Input Field -->
+                              <div>
+                                  <input type="text" class="business-address business-field-address" id="business_address" name="{{ form.business_address.name }}" value="{{ form.business_address.value }}">
+                              </div>
+
+                              <!-- CEO Name Input Field -->
+                              <div>
+                                  <input type="text" class="ceo-name ceo-name-field" id="ceo_name" name="{{ form.ceo_name.name }}" value="{{ form.ceo_name.value }}">
+                              </div>
+
+                              <!-- Password Input Field -->
+                              <div>
+                                  <input type="password" class="password password-field" id="password" name="{{ form.password.name }}" value="{{ form.password.value }}">
+                              </div>
+
+                              <!-- Submit Button -->
+                              <button type="submit" class="text-wrapper-13">Done</button>
+                          </form>
+
+
+
+<!--                          &lt;!&ndash;   Form Input Field    &ndash;&gt;-->
+
+
+<!--                          &lt;!&ndash; Name Input Field &ndash;&gt;-->
+<!--                          <div class="novidades">-->
+<!--                              <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />-->
+
+<!--                          </div>-->
+
+
+<!--                          &lt;!&ndash;   Surname Input Field    &ndash;&gt;-->
+<!--                          <div class="surname">-->
+<!--                              <input type="text" class="verify" id="name" name="name" required minlength="4" maxlength="8" size="10" />-->
+
+<!--                          </div>-->
+
+<!--                          &lt;!&ndash; Email Name Input Field &ndash;&gt;-->
+<!--                          <input type="email" class="email-box email-field"  pattern=".+@example\.com" size="30" required>-->
+
+<!--                          &lt;!&ndash; Business Selector Input Field &ndash;&gt;-->
+
+<!--                          <input type="text" class="select-box select-field">-->
+
+<!--                          &lt;!&ndash; Professional  Selector Input Field &ndash;&gt;-->
+
+<!--                          <input type="text" class="select-box-2 select-field-2">-->
+
+<!--                          &lt;!&ndash; Business Name Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="business-name business-field">-->
+<!--                          &lt;!&ndash;                      <div class="rectangle-4"></div>&ndash;&gt;-->
+
+<!--                          &lt;!&ndash; Business Address Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="business-address business-field-address">-->
+
+<!--                          &lt;!&ndash; Ceo Name Input Field &ndash;&gt;-->
+<!--                          <input type="text" class="ceo-name ceo-name-field">-->
+
+<!--                          &lt;!&ndash;  Password Field &ndash;&gt;-->
+<!--                          <input type="text" class="password password-field">-->
+
+<!--                          &lt;!&ndash;  Password Confirm Field &ndash;&gt;-->
+<!--                          <input type="text" class="password-confirm password-confirm-field">-->
+
+
+<!--                      </div>-->
+
+
+
+                  <img class="line" src="/static/img/register/line-6.png"/>
+                      <div class="text-wrapper-5">Personal data</div>
+                  </div>
+
+
+       <div class="text-wrapper-7">Surname</div>
+            </div>
+            <div class="text-wrapper-name">Name</div>
+
+             <div class="text-wrapper-business">Business</div>
+              <div class="text-wrapper-professional">Professional</div>
+
+            <div class="text-wrapper-8">Email</div>
+
+            <div class="text-wrapper-9">Business Address</div>
+
+            <div class="text-wrapper-10">CEO's full name</div>
+            <div class="text-wrapper-11">Password</div>
+
+            <div class="text-wrapper-12">Confirm password</div>
+            <div class="rectangle-9"></div>
+          </div>
+
+            <button class="text-wrapper-13" onclick="location.href = '/mainpage'" >Done</button>
+
+            <div class="rectangle-10"></div>
+        </div>
+          <img class="image" src="/static/img/register/image-20.png"/>
+          <img class="image-2" src="/static/img/register/image-40.png"/>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
