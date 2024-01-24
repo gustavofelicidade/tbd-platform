@@ -25,7 +25,6 @@
       </STYLE>
 
       <header>
-
         <nav class="itemsn">
             <div class="logo">
              <a href="#"><img src="static/img/mainpage/image-20logonav2.png"></a>
@@ -35,24 +34,20 @@
               <div class="line1"></div>
               <div class="line2"></div>
               <div class="line3"></div>
-            </div> -->
+            </div>-->
 
-            <ul class="navitems">
-                <div class="options">
+            <div class="options">
               <ul>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">T&O Standings</a></li>
-              <li><a href="#">Learn</a></li>
-              <li><a href="#">Support</a></li> 
-              </ul>
-                </div>
-
-              <div>
-              <a href="#"><button class="navbutton">My account</button></a>
-              </div>
-            </ul>
+              <li class="nav-item"><a href="#">Product</a></li>
+              <li class="nav-item"><a href="#">T&O Standings</a></li>
+              <li class="nav-item"><a href="#">Learn</a></li>
+              <li class="nav-item"><a href="#">Support</a></li> 
+            <div class="navbutton">
+              <a href="#"><button>My account</button></a>
+            </div>
+          </ul>
+            </div>
         </nav>
- 
       </header>
 
 
@@ -70,9 +65,9 @@
   
       <a href="#"><img src="static/img/footer/logo.png"></a>
   
-     <div class="legal-terms">
+     <div>
         <h1 id="legal">LEGAL</h1>
-        <ul class="footer-nav-item">
+        <ul class="footer-nav-item-legal">
         <li><a href="#">Terms</a</li>
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Cookie Policy</a></li>
@@ -80,9 +75,9 @@
        </ul>
      </div>
   
-     <div class="aboutus-terms">
-      <ul class="footer-nav-item">
+     <div>
       <h1 id="aboutus">ABOUT US</h1>
+      <ul class="footer-nav-item-aboutus">
        <li><a href="#">Who we are</a></li>
        <li><a href="#">Newsroom</a></li>
        <li><a href="#">Our venues</a></li>
@@ -90,9 +85,9 @@
       </ul>
     </div>
   
-    <div class="costumerservices-terms">
-      <ul class="footer-nav-item">
-        <h1 id="costumerservices">COSTUMER SERVICES</h1>
+    <div>
+      <h1 id="costumerservices">COSTUMER SERVICES</h1>
+      <ul class="footer-nav-item-costumerservices">
        <li><a href="#">How It Works</a></li>
        <li><a href="#">Help Centre</a></li>
        <li><a href="#">User Tips</a> </li>
@@ -124,8 +119,10 @@
     <div class="newsletter-term">
       <h1 class="newsletter">NEWSLETTER</h1>
       <P>Subscribe to our newsletter:</P>
-      <input type="email" id="email"/>
+      <ul class="newsletter-Subscribe">
+      <input type="email" placeholder="Enter your email"/>
       <a href="#"><button class="button">Subscribe</button></a>
+      </ul>
     </div>
   
   </section>

@@ -1,4 +1,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+ .itemsn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .logo {
   vertical-align: baseline;
@@ -7,44 +14,37 @@
   width: 2cm;
 }
 
-.navitems{
+.options{
   display: flex;
-  list-style: none;
   justify-content: space-between;
 }
 
-.options a{
-  font-family: sans-serif;
-  justify-content: space-between;
-  color: #ffffff;
+.options .nav-item{
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
 }
 
 .options ul {
   display: flex;
-}
-
-.options li{
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 25px;
-  margin-right: 110px;
-}
-
-.itemsn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 8vh;
+  justify-content: center;
+  list-style: none;
 }
 
 /*
-.navitems .navbutton{
-  width: 200px;
-  height: 100px;
-  margin: 20px;
-  padding-left: 30px;
-  background-color: #ffffff;
+
+.navbutton{
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #0187a7;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
+
 
 .navitems .navbutton a{
   color: #000080;
@@ -60,8 +60,7 @@
   background: #ffffff;
   margin: 8px;
 
-}
-*/
+}*/
 
 .mainpagebutton{
   width: 500px;
@@ -87,6 +86,9 @@
 } 
  
 
+
+
+
 .items img{
     position: relative;
     padding-top: 20%;
@@ -95,7 +97,7 @@
     height: 1.3cm;
     width: 1.5cm;
     }
-    
+ 
   .items{
       padding-left: 5%;
       padding-top: 10px;
@@ -110,26 +112,50 @@
 }
     
   footer h1{
-      letter-spacing: 1px;
-      margin-bottom: 4rem;
-      font-size: 25px;
-      gap: 3px;
-      font-weight: bold;
-      font-family: 'Lato', sans-serif;
-      color: #ffffff;
-      align-items:baseline;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    gap: 2px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    align-items:baseline;
 }
     
-.footer-nav-item a{
-      letter-spacing: 0.5px;
-      justify-content: space-between;
-      font-family: Arial;
-      font-size: 12px;
-      text-align: justify;
-      align-items: baseline;
-      list-style: none;
-      color: #dadada;
-      padding-bottom: 15px;
+.footer-nav-item-legal li{
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.footer-nav-item-legal a{
+    letter-spacing: 0.2px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+    
+.footer-nav-item-aboutus li{
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.footer-nav-item-aboutus a{
+  letter-spacing: 0.2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: white;
+}
+    
+.footer-nav-item-costumerservices li{
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+
+.footer-nav-item-costumerservices a{
+  letter-spacing: 0.2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: white;
 }
     
 .newsletter-term {
@@ -139,14 +165,14 @@
 .newsletter-term p{
      font-size: 15px;
      align-items: center;
-     color: #dadada;
-     font-family: Arial;
+     color: #ffffff;
+     font-family: 'Inter', sans-serif;
      padding-bottom: 13px;
 }
     
 .footer_social_media{
       display: flex;
-      gap: 5rem;
+      gap: 1rem;
       margin: top 1.5rem;
 }
     
@@ -172,18 +198,26 @@
       padding: 1.5rem;
       font-weight: 100;
 }
-    
+ 
+.newsletter-Subscribe input{
+ padding: 8px;
+ font-size: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin-bottom: 5px;
+}
+
 .button{
-      float:unset;
-      border: solid 3px white;
-      padding: 10px 15px;
+      border: #ffffff solid 1px;
+      padding: 7px 5px;
       cursor: pointer;
       background-color: white;
       font-size: 15px;
+      font-family: 'Inter', sans-serif;
       text-decoration: none;
-      border-radius: 7px;
+      border-radius: 10px;
       width: 50%;
-      height: 70%;
+      height: 50%;
       color: #000080;
 }
     
