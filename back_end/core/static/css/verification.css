@@ -8,12 +8,12 @@
 }
 
 .getting-the-code .div {
+    position: relative;
+    height: 100%;
+    width: 100%;
     background-image: url(../img/verification/getting-the-code.png);
     background-size: cover;
-    background-position: 50% 50%;
-    width: 843px;
-    height: 1279px;
-    position: relative;
+    background-position: 100%
 
 }
 
