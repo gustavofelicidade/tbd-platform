@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app',
+CORS_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app',
                         'https://hermandai.com',
                         'https://localhost:8000',
                         ]
@@ -43,7 +43,7 @@ CSRF_TRUSTED_ORIGINS = [
                         'https://localhost:8000',
                         ]
 
-
+CORS_ALLOW_CREDENTIALS = True
 
 
 CSRF_COOKIE_SECURE = True  # Send CSRF cookie over HTTPS only
@@ -73,7 +73,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Use environment variable
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Use environment variable
-DEFAULT_FROM_EMAIL = 'gustavofelicidadedacosta@gmail.com'
+DEFAULT_FROM_EMAIL = 'default from email'
 SERVER_EMAIL = 'gustavofelicidadedacosta@gmail.com'
 # Application definition
 
@@ -85,6 +85,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',
+    "corsheaders",
 
     # After create a new APP, go to urls.py to add the path
     'core',
@@ -103,9 +104,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
-new = ''
+
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
