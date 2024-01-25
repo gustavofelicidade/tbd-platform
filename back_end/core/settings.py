@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app/', 'hermandai.up.railway.app', 'https://hermandai.com']
+CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app/', 'https://hermandai.com']
 CSRF_COOKIE_SECURE = True  # Send CSRF cookie over HTTPS only
 
 CSRF_COOKIE_AGE = 31449600  # 1 year
