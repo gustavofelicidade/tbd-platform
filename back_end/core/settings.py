@@ -33,13 +33,14 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app/',
+CSRF_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app',
                         'https://hermandai.com',
-                        'https://localhost:8000'
+                        'https://localhost:8000',
                         ]
-CSRF_TRUSTED_ORIGINS = ['https://hermandai.up.railway.app/',
+CSRF_TRUSTED_ORIGINS = [
+                        'https://hermandai.up.railway.app',
                         'https://hermandai.com',
-                        'https://localhost:8000'
+                        'https://localhost:8000',
                         ]
 
 
