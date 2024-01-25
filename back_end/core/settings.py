@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app',
                         'https://hermandai.com',
                         'https://localhost:8000',
-                        'http://0.0.0.0:8000/'
+                        'http://0.0.0.0:8000'
                         ]
 CSRF_TRUSTED_ORIGINS = [
 
