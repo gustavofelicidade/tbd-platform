@@ -104,6 +104,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
+new = ''
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
