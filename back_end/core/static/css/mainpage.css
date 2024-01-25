@@ -14,42 +14,48 @@
   width: 2cm;
 }
 
+.itemsn{
+  display:flex;
+  justify-content: space-between;
+}
+
 .options{
+  list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.options .nav-item{
-  font-family: 'Inter', sans-serif;
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: #fff;
-  font-weight: 400;
+.options li{
+  margin-right: 60px;
 }
 
-.options ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+.options a{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.buttom-nav {
+  color: #000080;
+  background-color: #ffffff;
+  height: 50%;
+  width: 70%;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  margin-right: 100px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: #ffffff solid 1px;
+}
+
+.buttom-nav:hover{
+  background-color: #000080;
+  color: #ffffff;
 }
 
 /*
-
-.navbutton{
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #0187a7;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
-
-.navitems .navbutton a{
-  color: #000080;
-}
-
 .mobile-menu{
   cursor: pointer;
 }
