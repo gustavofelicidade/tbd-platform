@@ -44,14 +44,10 @@ CSRF_TRUSTED_ORIGINS = [
                         ]
 
 CORS_ALLOW_CREDENTIALS = True
-
-
 CSRF_COOKIE_SECURE = True  # Send CSRF cookie over HTTPS only
-
 CSRF_COOKIE_AGE = 31449600  # 1 year
 CSRF_COOKIE_DOMAIN = 'https://hermandai.up.railway.app'
 CSRF_COOKIE_HTTPONLY = True
-
 CSRF_USE_SESSIONS = True  # Or False, depending on your requirement
 
 
