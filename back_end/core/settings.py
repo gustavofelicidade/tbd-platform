@@ -36,11 +36,14 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOWED_ORIGINS = ['https://hermandai.up.railway.app',
                         'https://hermandai.com',
                         'https://localhost:8000',
+                        'http://0.0.0.0:8000/'
                         ]
 CSRF_TRUSTED_ORIGINS = [
+
                         'https://hermandai.up.railway.app',
                         'https://hermandai.com',
                         'https://localhost:8000',
+                        'http://0.0.0.0:8000',
                         ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -49,11 +52,6 @@ CSRF_COOKIE_AGE = 31449600  # 1 year
 CSRF_COOKIE_DOMAIN = 'https://hermandai.up.railway.app'
 CSRF_COOKIE_HTTPONLY = True
 CSRF_USE_SESSIONS = True  # Or False, depending on your requirement
-
-
-
-
-
 
 # settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
