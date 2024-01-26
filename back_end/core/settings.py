@@ -68,7 +68,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Use environment variable
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Use environment variable
 DEFAULT_FROM_EMAIL = 'default from email'
-SERVER_EMAIL = 'gustavofelicidadedacosta@gmail.com'
+
 # Application definition
 
 INSTALLED_APPS = [
