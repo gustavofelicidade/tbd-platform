@@ -69,6 +69,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Use environment variable
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Use environment variable
+
 DEFAULT_FROM_EMAIL = 'default from email'
 
 AUTH_USER_MODEL = 'account.CustomUser'
@@ -80,7 +81,7 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
 }
 
-
+# ckzf oyiw qmlg cmgp
 # Application definition
 
 INSTALLED_APPS = [
