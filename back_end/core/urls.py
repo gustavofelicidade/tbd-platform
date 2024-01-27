@@ -19,13 +19,18 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 from . import views
+from rest_framework.routers import DefaultRouter
+from django.conf import settings
+from django.conf.urls.static import static
+
+router = DefaultRouter()
 
 urlpatterns = [
     # Landing Page
     path('', views.landing_page),
 
     # Validating Account
-    path('register', views.register, name='register'),
+    # path('register', views.register, name='register'),
     path('verification', views.email_verification),
     path('insert_code', views.insert_code),
 
@@ -45,6 +50,9 @@ urlpatterns = [
 
     # Go to Account APP
     path('account/', include('account.urls')),  # Routing that is connected with the account module
+    # Go to Account APP
+    path('router/', include(router.urls)),
+
 ]
 
 

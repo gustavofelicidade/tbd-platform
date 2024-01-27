@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 import os
 from dotenv import load_dotenv
+import dj_database_url
+from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -69,6 +71,16 @@ EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')  # Use environment variable
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')  # Use environment variable
 DEFAULT_FROM_EMAIL = 'default from email'
 
+AUTH_USER_MODEL = 'account.CustomUser'
+
+ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
+
+SIMPLE_JWT = {
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=15),
+    'ROTATE_REFRESH_TOKENS': True,
+}
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -81,12 +93,17 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     "corsheaders",
 
+
     # After create a new APP, go to urls.py to add the path
     'core',
     'forum',
     'account',
     "blog",
+    'rest_framework',
+    'rest_framework_simplejwt.token_blacklist',
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

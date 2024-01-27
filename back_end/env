@@ -3,4 +3,5 @@ SECRET_KEY = 'django-insecure-&^ur$wu(_s2$g)l1s+0#7^ygo0qdbi$)r4_kci*i=$ky*!1uj&
 DATABASE_URL=postgresql://postgres:f2dDbaFgggebCcABGDBEFbaF5f343C@monorail.proxy.rlwy.net:33950/hermandai
 
 EMAIL_HOST_USER = 'gustavofelicidadedacosta@gmail.com'
+ADMIN_EMAIL = 'gustavofelicidadedacosta@gmail.com'
 EMAIL_HOST_PASSWORD = 'izss wfzy qebo tbur'
