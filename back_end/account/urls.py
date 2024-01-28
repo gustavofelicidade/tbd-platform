@@ -23,4 +23,7 @@ urlpatterns = [
          name='auth_update_profile'),
     path('logout/', views.LogoutView.as_view(), name='auth_logout'),
     path('logout_all/', views.LogoutAllView.as_view(), name='auth_logout_all'),
+
+
+    path('admin/user_approval/<str:username>/', views.admin_approve_user, name='user_approval'),
 ]

@@ -17,6 +17,23 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
+# Add this to your existing views in views.py
+
+from django.http import HttpResponse
+from django.contrib.admin.views.decorators import staff_member_required
+from django.shortcuts import get_object_or_404, redirect
+
+@staff_member_required
+def admin_approve_user(request, username):
+    user = get_object_or_404(User, username=username)
+    # Add your logic for approving the user here
+    # For example: user.is_approved = True; user.save()
+    user.is_approved = True
+    user.save()
+    return HttpResponse("User approved")  # Replace with your response or redirection
+
+
+
 
 class ChangePasswordView(generics.UpdateAPIView):
 
