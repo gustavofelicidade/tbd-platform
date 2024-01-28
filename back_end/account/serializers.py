@@ -66,10 +66,10 @@ class RegisterBusinessSerializer(serializers.ModelSerializer):
             f'Business Address: {validated_data["business_address"]}\n'
             f'CEO Full Name: {validated_data["ceo_full_name"]}\n\n'
             'To approve this user, please click the following link:\n'
-            f'https://hermandai.up.railway.app//account/register/approve/{str(user.username)}/\n\n'
+            f'https://hermandai.up.railway.app/account/register/approve/{str(user.username)}/\n\n'
             'To disapprove this user, please click the following link:\n'
             # message
-            f'https://hermandai.up.railway.app//account/register/disapprove/{str(user.username)}/',
+            f'https://hermandai.up.railway.app/account/register/disapprove/{str(user.username)}/',
             settings.EMAIL_HOST_USER,  # from email
             [settings.ADMIN_EMAIL],  # to email
             fail_silently=False,
