@@ -73,7 +73,7 @@ if __name__ == "__main__":
 
     # Optionally delete a specific user by ID
     # Uncomment the lines below to use the delete functionality
-    # user_id_to_delete = 1  # Example user ID
+    # user_id_to_delete = 2  # Example user ID
     # db_reader.delete_user(user_id_to_delete)
 
     db_reader.close_connection()
