@@ -40,32 +40,47 @@ class CustomUser(AbstractUser):
         related_query_name="customuser",
     )
 
+class UserManager:
+    @staticmethod
+    def list_users_by_email():
+        return CustomUser.objects.values('id', 'email')
 
-class DatabaseReader:
-    def __init__(self, db_path):
-        self.db_path = db_path
+    @staticmethod
+    def delete_user(user_id):
+        user = CustomUser.objects.filter(id=user_id)
+        if user.exists():
+            user.delete()
+            return f"User with id {user_id} deleted successfully."
+        else:
+            return f"No user found with id {user_id}."
 
-    def connect(self):
-        try:
-            self.connection = sqlite3.connect(self.db_path)
-            self.cursor = self.connection.cursor()
-        except sqlite3.Error as e:
-            print(f"An error occurred while connecting to the database: {e}")
 
-    def list_users_by_email(self):
-        try:
-            self.cursor.execute("SELECT id, email FROM account_customuser;")
-            return self.cursor.fetchall()
-        except sqlite3.Error as e:
-            print(f"An error occurred while listing users: {e}")
 
-    def delete_user(self, user_id):
-        try:
-            self.cursor.execute("DELETE FROM account_customuser WHERE id = ?", (user_id,))
-            self.connection.commit()
-        except sqlite3.Error as e:
-            print(f"An error occurred while deleting the user: {e}")
-
-    def close_connection(self):
-        if self.connection:
-            self.connection.close()
+# class DatabaseReader:
+#     def __init__(self, db_path):
+#         self.db_path = db_path
+#
+#     def connect(self):
+#         try:
+#             self.connection = sqlite3.connect(self.db_path)
+#             self.cursor = self.connection.cursor()
+#         except sqlite3.Error as e:
+#             print(f"An error occurred while connecting to the database: {e}")
+#
+#     def list_users_by_email(self):
+#         try:
+#             self.cursor.execute("SELECT id, email FROM account_customuser;")
+#             return self.cursor.fetchall()
+#         except sqlite3.Error as e:
+#             print(f"An error occurred while listing users: {e}")
+#
+#     def delete_user(self, user_id):
+#         try:
+#             self.cursor.execute("DELETE FROM account_customuser WHERE id = ?", (user_id,))
+#             self.connection.commit()
+#         except sqlite3.Error as e:
+#             print(f"An error occurred while deleting the user: {e}")
+#
+#     def close_connection(self):
+#         if self.connection:
+#             self.connection.close()
