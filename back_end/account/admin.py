@@ -1,9 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import CustomUser, DatabaseReader
 from django.utils.html import format_html
 from django.urls import reverse
-from django.utils.http import urlencode
 
 class CustomUserAdmin(UserAdmin):
     model = CustomUser
@@ -11,18 +10,28 @@ class CustomUserAdmin(UserAdmin):
     list_filter = ('is_staff', 'is_superuser', 'is_active', 'is_approved', 'is_disapproved')
     search_fields = ('email', 'first_name', 'last_name')
     ordering = ('email',)
-    fieldsets = (
-        (None, {'fields': ('email', 'password', 'name', 'surname', 'business_name')}),
-        ('Permissions', {'fields': ('is_staff', 'is_active', 'is_approved', 'is_disapproved')}),
-        ('Personal info', {'fields': ('first_name', 'last_name')}),
-    )
+    actions = ['list_users_by_email', 'delete_selected_users']
 
-    # In your CustomUserAdmin class in admin.py
     def approval_link(self, obj):
         if obj.is_pending:
             return format_html('<a href="{}">Approve/Disapprove</a>', reverse('user_approval', args=[obj.username]))
         return "N/A"
 
+    def list_users_by_email(self, request, queryset):
+        db_reader = DatabaseReader('mydatabase')  # Adjust the path as needed
+        db_reader.connect()
+        users = db_reader.list_users_by_email()
+        for user in users:
+            print(user)  # Or handle this information differently
+        db_reader.close_connection()
+    list_users_by_email.short_description = "List users by email"
 
-# Register your models here.
+    def delete_selected_users(self, request, queryset):
+        db_reader = DatabaseReader('mydatabase')  # Adjust the path as needed
+        db_reader.connect()
+        for user in queryset:
+            db_reader.delete_user(user.id)
+        db_reader.close_connection()
+    delete_selected_users.short_description = "Delete selected users (Caution)"
+
 admin.site.register(CustomUser, CustomUserAdmin)

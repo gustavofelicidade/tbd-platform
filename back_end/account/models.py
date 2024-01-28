@@ -3,6 +3,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+import sqlite3
 
 class CustomUser(AbstractUser):
     name = models.CharField(max_length=255)
@@ -38,3 +39,33 @@ class CustomUser(AbstractUser):
         related_name="customuser_user_permissions",
         related_query_name="customuser",
     )
+
+
+class DatabaseReader:
+    def __init__(self, db_path):
+        self.db_path = db_path
+
+    def connect(self):
+        try:
+            self.connection = sqlite3.connect(self.db_path)
+            self.cursor = self.connection.cursor()
+        except sqlite3.Error as e:
+            print(f"An error occurred while connecting to the database: {e}")
+
+    def list_users_by_email(self):
+        try:
+            self.cursor.execute("SELECT id, email FROM account_customuser;")
+            return self.cursor.fetchall()
+        except sqlite3.Error as e:
+            print(f"An error occurred while listing users: {e}")
+
+    def delete_user(self, user_id):
+        try:
+            self.cursor.execute("DELETE FROM account_customuser WHERE id = ?", (user_id,))
+            self.connection.commit()
+        except sqlite3.Error as e:
+            print(f"An error occurred while deleting the user: {e}")
+
+    def close_connection(self):
+        if self.connection:
+            self.connection.close()
