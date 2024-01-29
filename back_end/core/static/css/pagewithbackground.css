@@ -1,0 +1,594 @@
+.web-app {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.web-app .div {
+  width: 1446px;
+  height: 2910px;
+  position: relative;
+}
+
+.web-app .navbar-blue-LOGO {
+  position: absolute;
+  width: 1440px;
+  height: 207px;
+  top: 17px;
+  left: 0;
+  overflow: hidden;
+}
+
+.web-app .overlap {
+  position: absolute;
+  width: 340px;
+  height: 39px;
+  top: 74px;
+  left: 416px;
+}
+
+.web-app .t-o-standings {
+  position: absolute;
+  width: 190px;
+  top: 1px;
+  left: 95px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000082;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .text-wrapper {
+  position: absolute;
+  width: 107px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000082;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .text-wrapper-2 {
+  position: absolute;
+  width: 79px;
+  top: 0;
+  left: 261px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000082;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .text-wrapper-3 {
+  position: absolute;
+  width: 104px;
+  top: 74px;
+  left: 756px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000082;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .image {
+  width: 71px;
+  height: 63px;
+  top: 66px;
+  left: 43px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.web-app .log-in-button {
+  position: absolute;
+  width: 142px;
+  height: 40px;
+  top: 62px;
+  left: 1272px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.web-app .overlap-group {
+  position: relative;
+  width: 140px;
+  height: 40px;
+}
+
+.web-app .rectangle {
+  position: absolute;
+  width: 140px;
+  height: 40px;
+  top: 0;
+  left: 0;
+}
+
+.web-app .text-wrapper-4 {
+  position: absolute;
+  width: 132px;
+  height: 26px;
+  top: 6px;
+  left: 4px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000080;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .img {
+  width: 300px;
+  height: 51px;
+  top: 69px;
+  left: 114px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.web-app .rectangle-2 {
+  position: absolute;
+  width: 1307px;
+  height: 2652px;
+  top: 207px;
+  left: 76px;
+  background-color: #d9d9d9;
+}
+
+.web-app .overlap-2 {
+  position: absolute;
+  width: 886px;
+  height: 84px;
+  top: 375px;
+  left: 275px;
+}
+
+.web-app .section-step {
+  position: absolute;
+  width: 886px;
+  height: 84px;
+  top: 0;
+  left: 0;
+}
+
+.web-app .overlap-3 {
+  position: relative;
+  width: 892px;
+  height: 92px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-11.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .polygon {
+  position: absolute;
+  width: 16px;
+  height: 11px;
+  top: 63px;
+  left: 841px;
+}
+
+.web-app .text-wrapper-5 {
+  position: absolute;
+  width: 813px;
+  height: 39px;
+  top: 19px;
+  left: 27px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000080;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .overlap-4 {
+  position: relative;
+  width: 892px;
+  height: 92px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-1.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-button {
+  position: absolute;
+  width: 252px;
+  height: 60px;
+  top: 2008px;
+  left: 598px;
+}
+
+.web-app .div-wrapper {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-145-4.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .text-wrapper-6 {
+  position: absolute;
+  width: 230px;
+  height: 28px;
+  top: 13px;
+  left: 11px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000080;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .overlap-wrapper {
+  top: 837px;
+  left: 299px;
+  position: absolute;
+  width: 252px;
+  height: 60px;
+}
+
+.web-app .overlap-5 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-10.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .overlap-group-wrapper {
+  top: 833px;
+  left: 791px;
+  position: absolute;
+  width: 252px;
+  height: 60px;
+}
+
+.web-app .overlap-6 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-9.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .rectangle-3 {
+  position: absolute;
+  width: 258px;
+  height: 68px;
+  top: 0;
+  left: 0;
+}
+
+.web-app .group-button-2 {
+  top: 1170px;
+  left: 598px;
+  position: absolute;
+  width: 252px;
+  height: 60px;
+}
+
+.web-app .overlap-7 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-8.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-button-3 {
+  top: 1671px;
+  left: 598px;
+  position: absolute;
+  width: 252px;
+  height: 60px;
+}
+
+.web-app .overlap-8 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-7.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-button-4 {
+  top: 1167px;
+  left: 909px;
+  position: absolute;
+  width: 252px;
+  height: 60px;
+}
+
+.web-app .overlap-9 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-6.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .overlap-10 {
+  position: absolute;
+  width: 928px;
+  height: 222px;
+  top: 567px;
+  left: 115px;
+}
+
+.web-app .group {
+  position: absolute;
+  width: 252px;
+  height: 60px;
+  top: 0;
+  left: 184px;
+}
+
+.web-app .overlap-11 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-5.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .text-wrapper-7 {
+  position: absolute;
+  width: 230px;
+  height: 28px;
+  top: 13px;
+  left: 11px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .group-button-5 {
+  position: absolute;
+  width: 928px;
+  height: 162px;
+  top: 60px;
+  left: 0;
+}
+
+.web-app .overlap-12 {
+  position: relative;
+  width: 930px;
+  height: 170px;
+}
+
+.web-app .rectangle-4 {
+  position: absolute;
+  width: 701px;
+  height: 148px;
+  top: 22px;
+  left: 229px;
+}
+
+.web-app .text-wrapper-8 {
+  position: absolute;
+  width: 637px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000080;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.web-app .group-2 {
+  position: absolute;
+  width: 637px;
+  height: 86px;
+  top: 54px;
+  left: 255px;
+}
+
+.web-app .group-3 {
+  position: absolute;
+  width: 252px;
+  height: 60px;
+  top: 1170px;
+  left: 296px;
+}
+
+.web-app .overlap-13 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-4.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-4 {
+  position: absolute;
+  width: 252px;
+  height: 60px;
+  top: 1671px;
+  left: 296px;
+}
+
+.web-app .overlap-14 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-3.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-5 {
+  position: absolute;
+  width: 252px;
+  height: 60px;
+  top: 2702px;
+  left: 568px;
+}
+
+.web-app .overlap-15 {
+  position: relative;
+  width: 258px;
+  height: 68px;
+  left: -4px;
+  background-image: url(./img/rectangle-144-2.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .group-6 {
+  position: absolute;
+  width: 1171px;
+  height: 539px;
+  top: 2116px;
+  left: 137px;
+}
+
+.web-app .group-wrapper {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 937px;
+  left: 236px;
+  background-image: url(./img/group-164.png);
+  background-size: 100% 100%;
+}
+
+.web-app .group-7 {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 0;
+  left: 0;
+}
+
+.web-app .overlap-16 {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 1380px;
+  left: 236px;
+  background-image: url(./img/group-164.png);
+  background-size: 100% 100%;
+}
+
+.web-app .rectangle-5 {
+  position: absolute;
+  width: 431px;
+  height: 44px;
+  top: 44px;
+  left: 0;
+}
+
+.web-app .rectangle-6 {
+  position: absolute;
+  width: 431px;
+  height: 44px;
+  top: 88px;
+  left: 0;
+}
+
+.web-app .overlap-17 {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 1380px;
+  left: 768px;
+  background-image: url(./img/group-164.png);
+  background-size: 100% 100%;
+}
+
+.web-app .overlap-18 {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 1775px;
+  left: 768px;
+  background-image: url(./img/group-164.png);
+  background-size: 100% 100%;
+}
+
+.web-app .overlap-19 {
+  position: absolute;
+  width: 431px;
+  height: 177px;
+  top: 1775px;
+  left: 236px;
+  background-image: url(./img/rectangle-188.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .line {
+  position: absolute;
+  width: 9px;
+  height: 13px;
+  top: 1834px;
+  left: 745px;
+}
+
+.web-app .group-send-copy-to {
+  position: absolute;
+  width: 164px;
+  height: 18px;
+  top: 2782px;
+  left: 612px;
+}
+
+.web-app .text-wrapper-9 {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000080;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.web-app .line-wrapper {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  top: 0;
+  left: -4px;
+  background-image: url(./img/rectangle-128.svg);
+  background-size: 100% 100%;
+}
+
+.web-app .line-2 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 7px;
+  left: 6px;
+}

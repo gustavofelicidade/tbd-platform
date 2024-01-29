@@ -65,8 +65,7 @@
   height: 2px;
   background: #ffffff;
   margin: 8px;
-
-}*/
+} */
 
 .mainpagebutton{
   width: 500px;
@@ -85,16 +84,12 @@
 .mainpage li{
   justify-content: space-around;
   margin-left: 2px;
-  margin-right: px;
+  margin-right: 2px;
   align-items: center;
   display: flex;
   margin-top: 12%;
 } 
  
-
-
-
-
 .items img{
     position: relative;
     padding-top: 20%;
