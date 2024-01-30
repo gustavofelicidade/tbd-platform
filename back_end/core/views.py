@@ -65,7 +65,16 @@ def invitation(request):
 def landing_page(request):
     return render(request, 'index.html')
 
+#the next three ones are new, made by manu
 
+def teo_page (request):
+    return render(request, 'teo.html')
+
+def uploadriskprofile_page(request):
+    return render(request, 'upload_risk_profile.html')
+
+def downloadriskprofile_page(request):
+    return render(request, 'download_risk_profile.html')
 
 def base(request):
     return render(request, 'base.html')

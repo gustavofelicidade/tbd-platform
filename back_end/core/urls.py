@@ -34,6 +34,14 @@ urlpatterns = [
 
     path('mainpage', views.mainpage),
 
+#the next three ones are new, made by manu
+
+    path('teo_page', views.teo_page),
+
+    path('uploadriskprofile_page', views.upload_risk_profile),
+
+    path('downloadriskprofile_page', views.download_risk_profile),
+
     # Go to Forum APP
     path("forum/", include("forum.urls")),  # Routing that is connected with the account module
 
