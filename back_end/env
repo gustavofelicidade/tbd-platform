@@ -5,3 +5,4 @@ DATABASE_URL=postgresql://postgres:f2dDbaFgggebCcABGDBEFbaF5f343C@monorail.proxy
 EMAIL_HOST_USER = 'gustavofelicidadedacosta@gmail.com'
 ADMIN_EMAIL = 'gustavofelicidadedacosta@gmail.com'
 EMAIL_HOST_PASSWORD = 'izss wfzy qebo tbur'
+DEFAULT_FROM_EMAIL = 'https://hermandai.up.railway.app <gustavofelicidadedacosta@gmail.com>'
