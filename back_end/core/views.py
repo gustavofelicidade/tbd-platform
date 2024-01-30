@@ -27,7 +27,7 @@ def send_verification_code(request):
         send_mail(
             'HermandAI: Your Verification Code',
             f'Your code is: {code}',
-            'gustavosnik95@gmail.com',  # Replace with your email
+            'gustavofelicidadedacosta@gmail.com',  # Replace with your email
             [email],
             fail_silently=False,
         )
