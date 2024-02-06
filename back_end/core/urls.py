@@ -30,7 +30,7 @@ urlpatterns = [
     path('', views.landing_page),
 
     # Validating Account
-    # path('register', views.register, name='register'),
+    path('register', views.register, name='register'),
     path('verification', views.email_verification),
     path('insert_code', views.insert_code),
 
@@ -38,6 +38,12 @@ urlpatterns = [
     path('verify_code', views.verify_code, name='verify_code'),
 
     path('mainpage', views.mainpage),
+
+    path('teo', views.teo_page),
+
+    path('uploadriskprofile', views.uploadriskprofile_page),
+
+    path('downloadriskprofile', views.downloadriskprofile_page),
 
     # Go to Forum APP
     path("forum/", include("forum.urls")),  # Routing that is connected with the account module

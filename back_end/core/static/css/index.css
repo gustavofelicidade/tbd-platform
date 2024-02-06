@@ -12,7 +12,7 @@
     width: 274px;
     height: 57px;
     top: 535px;
-    left: 505px
+    left: 505px;
 
     text-align: center;
     text-decoration: none;
@@ -33,7 +33,7 @@
 
 .registerBtn:hover {
   background-color: #000080;
-  color: white
+  color: white;
   border: 2px solid white;
 
 }
