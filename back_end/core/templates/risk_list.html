@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+
+{% block content %}
+<!--<div class="table-landing-page">-->
+<!--    <div class="headers">-->
+<!--        &lt;!&ndash; Table Headers Here &ndash;&gt;-->
+<!--    </div>-->
+<!--    {% for risk in page_obj %}-->
+<!--    <div class="row">-->
+<!--        &lt;!&ndash; Dynamic Row Content Here &ndash;&gt;-->
+<!--    </div>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+
+<div class="pagination">
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    {% endif %}
+    <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+</div>
+{% endblock %}

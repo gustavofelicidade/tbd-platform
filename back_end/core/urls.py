@@ -23,6 +23,10 @@ from rest_framework.routers import DefaultRouter
 from django.conf import settings
 from django.conf.urls.static import static
 
+
+from .views import risk_list
+
+
 router = DefaultRouter()
 
 urlpatterns = [
@@ -58,6 +62,15 @@ urlpatterns = [
     path('account/', include('account.urls')),  # Routing that is connected with the account module
     # Go to Account APP
     path('router/', include(router.urls)),
+
+    path('teo_preview', views.teo_page_preview),
+    path('product', views.product),
+    path('support', views.support),
+    path('subscription', views.subscription),
+    path('learn', views.learn),
+    path('login', views.login),
+
+    path('risks/', risk_list, name='risk_list'),
 
 ]
 
