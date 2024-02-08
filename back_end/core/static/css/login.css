@@ -1,20 +1,20 @@
-.sign-up-informations {
+.login {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-
+    height: 100%;
 }
 
-.sign-up-informations .overlap-wrapper {
+.login .overlap-wrapper {
     background-color: #FFFFFF;
     width: 100%;
-    height: 2410px;
+    height: 710px;
 
 }
 
-.sign-up-informations .overlap {
+.login .overlap {
     position: relative;
     height: 100%;
     width: 100%;
@@ -24,26 +24,26 @@
 
 }
 
-.sign-up-informations .overlap-group {
+.login .overlap-group {
     position: absolute;
-    height: 1852px;
+    height: 700px;
     top: 447px;
     left: 90px;
 
 }
 
 
-.sign-up-informations .rectangle {
+.login .rectangle {
     position: absolute;
     width: 1162px;
-    height: 1844px;
+    height: 644px;
     top: 8px;
     left: 52px;
 
 }
 
 
-.sign-up-informations .by-creating-an {
+.login .by-creating-an {
     position: absolute;
     width: 824px;
     top: 1602px;
@@ -58,7 +58,7 @@
 
 }
 
-.sign-up-informations .text-wrapper {
+.login .text-wrapper {
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #FFFFFF;
@@ -68,7 +68,7 @@
 }
 
 
-.sign-up-informations .div {
+.login .div {
     position: absolute;
     width: 1256px;
     height: 1580px;
@@ -79,7 +79,7 @@
 
 
 
-.sign-up-informations .overlap-2 {
+.login .overlap-2 {
     position: absolute;
     width: 1167px;
     height: 260px;
@@ -89,7 +89,7 @@
 }
 
 
-.sign-up-informations .group {
+.login .group {
     position: absolute;
     width: 1167px;
     height: 260px;
@@ -98,7 +98,7 @@
 
 }
 
-.sign-up-informations .overlap-group-2 {
+.login .overlap-group-2 {
     position: absolute;
     width: 414px;
     height: 102px;
@@ -108,7 +108,7 @@
 }
 
 
-.sign-up-informations .frame {
+.login .frame {
     position: absolute;
     width: 209px;
     height: 66px;
@@ -121,7 +121,7 @@
 
 
 
-.sign-up-informations .rectangle-3 {
+.login .rectangle-3 {
     position: absolute;
     width: 420px;
     height: 71px;
@@ -134,7 +134,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-3 {
+.login .text-wrapper-3 {
     position: absolute;
     width: 289px;
     top: 369px;
@@ -150,7 +150,7 @@
 
 }
 /*=========================================================*/
-.sign-up-informations .business-name {
+.login .business-name {
     position: relative;
     width: 920px;
     height: 71px;
@@ -164,7 +164,7 @@
 
 }
 
-.sign-up-informations .business-field{
+.login .business-field{
     position: absolute;
     border-radius: 24px;
     padding: 10px;
@@ -179,7 +179,7 @@
 
 
 
-.sign-up-informations .business-address {
+.login .business-address {
     position: relative;
     width: 920px;
     height: 71px;
@@ -193,7 +193,7 @@
 
 }
 
-.sign-up-informations .business-field-address{
+.login .business-field-address{
     position: absolute;
     border-radius: 24px;
     padding: 10px;
@@ -207,11 +207,11 @@
 
 /*=========================================================*/
 
-.sign-up-informations .ceo-name {
+.login .ceo-name {
     position: relative;
     width: 920px;
     height: 71px;
-    top: 835px;
+    top: 85px;
     left: 100px;
     background-color: #FFFFFF;
     border: 1px solid;
@@ -221,7 +221,7 @@
 
 }
 
-.sign-up-informations .ceo-name-field {
+.login .ceo-name-field {
     position: absolute;
     border-radius: 24px;
     padding: 10px;
@@ -235,11 +235,11 @@
 
 /*=========================================================*/
 
-.sign-up-informations .password {
+.login .password {
     position: relative;
     width: 920px;
     height: 71px;
-    top: 975px;
+    top: 275px;
     left: 100px;
     background-color: #FFFFFF;
     border: 1px solid;
@@ -249,7 +249,7 @@
 
 }
 
-.sign-up-informations .password-field {
+.login .password-field {
     position: absolute;
     border-radius: 24px;
     padding: 10px;
@@ -262,7 +262,7 @@
 }
 
 /*=========================================================*/
-.sign-up-informations .password-confirm {
+.login .password-confirm {
     position: relative;
     width: 920px;
     top: 1130px;
@@ -276,7 +276,7 @@
 
 }
 
-.sign-up-informations .password-confirm-field {
+.login .password-confirm-field {
     position: absolute;
     border-radius: 24px;
     padding: 10px;
@@ -294,7 +294,7 @@
 
 
 
-.sign-up-informations .text-wrapper-5 {
+.login .text-wrapper-5 {
     position: absolute;
     width: 369px;
     top: -130px;
@@ -310,7 +310,7 @@
 
 }
 
-.sign-up-informations .surname{
+.login .surname{
     background-color: transparent;
     font-family: 'poppins';
     padding: 1em;
@@ -323,7 +323,7 @@
 }
 
 
-.sign-up-informations .novidades{
+.login .novidades{
     background-color: transparent;
     font-family: 'poppins';
     padding: 1em;
@@ -335,7 +335,7 @@
 
 }
 
-.sign-up-informations .verify{
+.login .verify{
     border-radius: 24px;
     padding: 10px;
     width: 440px;
@@ -347,7 +347,7 @@
 }
 
 
-.sign-up-informations .email-box {
+.login .email-box {
     position: relative;
     top: 284px;
     left: 100px;
@@ -359,7 +359,7 @@
 
 }
 
-.sign-up-informations .email-field{
+.login .email-field{
     border-radius: 24px;
     padding: 10px;
     border: 1px solid black;
@@ -372,7 +372,7 @@
 
 
 
-.sign-up-informations .text-wrapper-6 {
+.login .text-wrapper-6 {
     position: absolute;
     width: 206px;
     top: 150px;
@@ -386,7 +386,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-name {
+.login .text-wrapper-name {
     position: absolute;
     width: 206px;
     top: 250px;
@@ -401,7 +401,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-business {
+.login .text-wrapper-business {
     position: absolute;
     width: 206px;
     top: 570px;
@@ -415,7 +415,7 @@
     line-height: normal;
 
 }
-.sign-up-informations .text-wrapper-professional {
+.login .text-wrapper-professional {
     position: absolute;
     width: 206px;
     top: 570px;
@@ -430,7 +430,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-7 {
+.login .text-wrapper-7 {
     position: absolute;
     width: 206px;
     top: 250px;
@@ -447,7 +447,7 @@
 
 
 
-.sign-up-informations .text-wrapper-8 {
+.login .text-wrapper-8 {
     position: absolute;
     width: 650px;
     top: 382px;
@@ -463,7 +463,7 @@
 }
 
 
-.sign-up-informations .select-box {
+.login .select-box {
     position: absolute;
     width: 68px;
     height: 68px;
@@ -478,7 +478,7 @@
 
 }
 
-.sign-up-informations .select-field{
+.login .select-field{
     border-radius: 24px;
     padding: 10px;
     border: 1px solid black;
@@ -489,7 +489,7 @@
 
 }
 
-.sign-up-informations .select-box-2 {
+.login .select-box-2 {
     position: absolute;
     width: 68px;
     height: 68px;
@@ -504,7 +504,7 @@
 
 }
 
-.sign-up-informations .select-field-2{
+.login .select-field-2{
     border-radius: 24px;
     padding: 10px;
     border: 1px solid black;
@@ -515,7 +515,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-9 {
+.login .text-wrapper-9 {
     width: 171px;
     position: absolute;
     top: 792px;
@@ -534,7 +534,7 @@
 
 
 
-.sign-up-informations .rectangle-6 {
+.login .rectangle-6 {
     position: absolute;
     width: 920px;
     height: 71px;
@@ -549,10 +549,10 @@
 }
 
 
-.sign-up-informations .text-wrapper-10 {
+.login .text-wrapper-10 {
     width: 362px;
     position: absolute;
-    top: 931px;
+    top: 70px;
     left: 104px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
@@ -567,10 +567,10 @@
 }
 
 
-.sign-up-informations .text-wrapper-11 {
+.login .text-wrapper-11 {
     position: absolute;
     width: 194px;
-    top: 1075px;
+    top: 175px;
     left: 133px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
@@ -585,7 +585,7 @@
 }
 
 
-.sign-up-informations .rectangle-wrapper {
+.login .rectangle-wrapper {
     position: absolute;
     width: 920px;
     height: 60px;
@@ -600,7 +600,7 @@
 }
 
 
-.sign-up-informations .rectangle-7 {
+.login .rectangle-7 {
     position: relative;
     width: 920px;
     height: 60px;
@@ -615,7 +615,7 @@
 }
 
 
-.sign-up-informations .text-wrapper-12 {
+.login .text-wrapper-12 {
     position: absolute;
     width: 383px;
     top: 1220px;
@@ -631,7 +631,7 @@
 
 }
 
-.sign-up-informations .rectangle-8 {
+.login .rectangle-8 {
     position: absolute;
     width: 920px;
     height: 60px;
@@ -646,7 +646,7 @@
 }
 
 
-.sign-up-informations .rectangle-9 {
+.login .rectangle-9 {
     position: absolute;
     width: 481px;
     height: 133px;
@@ -656,11 +656,11 @@
 
 }
 
-.sign-up-informations .text-wrapper-13 {
+.login .text-wrapper-13 {
     position: absolute;
     width: 147px;
-    top: 1738px;
-    left: 554px;
+    top: 350px;
+    left: 454px;
     font-family: "Inter", Helvetica;
     font-weight: 800;
     font-size: 25px;
@@ -678,7 +678,7 @@
 
 }
 
-.sign-up-informations .text-wrapper-13:hover {
+.login .text-wrapper-13:hover {
   position: absolute;
   background-color: #000080;
   color: white;
@@ -689,7 +689,7 @@
 
 
 
-.sign-up-informations .rectangle-10 {
+.login .rectangle-10 {
     position: absolute;
     width: 52px;
     height: 37px;
@@ -704,7 +704,7 @@
 
 
 
-.sign-up-informations .image {
+.login .image {
     position: absolute;
     width: 303px;
     height: 290px;
@@ -715,7 +715,7 @@
 }
 
 
-.sign-up-informations .image-2 {
+.login .image-2 {
     position: absolute;
     width: 300px;
     height: 51px;

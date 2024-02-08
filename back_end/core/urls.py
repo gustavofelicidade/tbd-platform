@@ -41,7 +41,7 @@ urlpatterns = [
     path('send_verification_code', views.send_verification_code, name='send_verification_code'),
     path('verify_code', views.verify_code, name='verify_code'),
 
-    path('mainpage', views.mainpage),
+    path('mainpage', views.mainpage, name='mainpage'),
 
     path('teo', views.teo_page),
 

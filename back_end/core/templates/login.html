@@ -1,10 +1,76 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
-<body>
 
-</body>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/globals.css' %}">
+
+  </head>
+
+  <body>
+
+    <div class="login">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="overlap-group">
+          <img class="rectangle" src="/static/img/register/rectangle-118.png"/>
+
+          <p class="by-creating-an">
+            <span class="text-wrapper">Don't have account? Register</span>
+          </p>
+
+          <div class="div">
+            <div class="">
+              <div class="overlap-2">
+                <div class="group">
+                  <div class="overlap-group-2">
+                      <div class="frame">
+                          <form method="post" action="{% url 'mainpage' %}">
+                              {% csrf_token %}
+
+
+                              <!-- CEO Name Input Field -->
+                              <div>
+                                  <input type="text" class="ceo-name ceo-name-field" id="ceo_name" name="{{ form.ceo_name.name }}" value="{{ form.ceo_name.value }}">
+                              </div>
+
+                              <!-- Password Input Field -->
+                              <div>
+                                  <input type="password" class="password password-field" id="password" name="{{ form.password.name }}" value="{{ form.password.value }}">
+                              </div>
+
+                              <!-- Submit Button -->
+                              <button type="submit" class="text-wrapper-13">Enter</button>
+
+
+                          </form>
+
+                  <img class="line" src="/static/img/register/line-6.png"/>
+                      <div class="text-wrapper-5">Login</div>
+                  </div>
+
+
+            </div>
+
+            <div class="text-wrapper-10">Email</div>
+            <div class="text-wrapper-11">Password</div>
+
+            <div class="rectangle-9"></div>
+          </div>
+
+
+            <div class="rectangle-10"></div>
+        </div>
+          <img class="image" src="/static/img/register/image-20.png"/>
+          <img class="image-2" src="/static/img/register/image-40.png"/>
+        </div>
+      </div>
+    </div>
+  </body>
+
 </html>
