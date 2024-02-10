@@ -67,6 +67,8 @@ def invitation(request):
 def landing_page(request):
     return render(request, 'index.html')
 
+#the next three ones are new, made by manu
+
 def teo_page (request):
     return render(request, 'teo.html')
 

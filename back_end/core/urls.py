@@ -38,7 +38,7 @@ urlpatterns = [
     path('verify_code', views.verify_code, name='verify_code'),
 
     path('mainpage', views.mainpage),
-
+#the next three ones are new, made by manu
     path('teo', views.teo_page),
 
     path('uploadriskprofile', views.uploadriskprofile_page),
