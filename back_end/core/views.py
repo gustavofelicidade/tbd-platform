@@ -15,6 +15,13 @@ from django.contrib import messages
 
 import random
 
+
+
+from django.core.paginator import Paginator
+from .models import Risk  # Import your model here
+
+
+
 # Global dictionary to store email and verification codes
 verification_codes = {}
 
@@ -33,6 +40,7 @@ def send_verification_code(request):
         )
         return redirect('/insert_code')
     return redirect('/verification')
+
 
 def verify_code(request):
     if request.method == 'POST':
@@ -61,22 +69,30 @@ def register(request):
 
     return render(request, 'register.html', {'form': form})
 
+
 def invitation(request):
     return render(request, 'register.html')
+
 
 def landing_page(request):
     return render(request, 'index.html')
 
+<<<<<<< HEAD
 #the next three ones are new, made by manu
+=======
+>>>>>>> e8dafab4056fc0d4addc9b52d561f24105ba6e2c
 
 def teo_page (request):
     return render(request, 'teo.html')
 
+
 def uploadriskprofile_page(request):
     return render(request, 'upload_risk_profile.html')
 
+
 def downloadriskprofile_page(request):
     return render(request, 'download_risk_profile.html')
+
 
 def base(request):
     return render(request, 'base.html')
@@ -88,7 +104,6 @@ def mainpage(request):
 
 def dashboard(request):
     return render(request, 'dashboard.html')
-
 
 
 def admin_panel(request):
@@ -103,10 +118,9 @@ def finance_management_features(request):
     return render(request, 'finance-management-features.html')
 
 
-
-
 def email_verification(request):
     return render(request, 'verification.html')
+
 
 def insert_code(request):
     return render(request, 'insert_code.html')
@@ -116,3 +130,33 @@ def to_page(request):
     return render(request, 'to-page.html')
 
 
+def product(request):
+    return render(request, 'product.html')
+
+
+def teo_page_preview(request):
+    return render(request, 'teo_preview.html')
+
+
+def support(request):
+    return render(request, 'support.html')
+
+
+def subscription(request):
+    return render(request, 'subscription.html')
+
+
+def learn(request):
+    return render(request, 'learn.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+
+def risk_list(request):
+    risk_list = Risk.objects.all()
+    paginator = Paginator(risk_list, 5)  # Display 5 risks per page
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    return render(request, 'risk_list.html', {'page_obj': page_obj})
